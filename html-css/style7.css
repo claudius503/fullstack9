@@ -188,6 +188,7 @@ label {
 }
 .slider-element {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 .slider-element input {
     display: none;
@@ -198,6 +199,7 @@ label {
 .slider-button {
     padding: 10px 20px;
     background-color: bisque;
+    margin: 20px;
 }
 .slider-element input:checked + .slide {
     display: flex;
