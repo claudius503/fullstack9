@@ -1,0 +1,144 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    display: inline-block;
+}
+i {
+    margin-right: 10px;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.border-small {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+header {
+    background-color: #ffba00;
+}
+.header-top > ul > li {
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+}
+header > div {
+    justify-content: space-between;
+    padding: 10px 30px;
+    gap: 10px;
+}
+.header-bottom > ul > li {
+    display: inline-block;
+}
+.sub-menu label:hover {
+    color: rgb(119, 119, 119);
+}
+.sub-menu > ul {
+    display: none;
+}
+label {
+    user-select: none;
+}
+.sub-menu input {
+    display: none;
+}
+.sub-menu input:checked + ul {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.header-top .sub-menu input:checked + ul {
+    right: 5px;
+    width: 150%;
+}
+.header-bottom {
+    text-align: center;
+}
+.header-bottom img {
+    max-height: 30px;
+}
+.header-bottom form, .header-bottom input {
+    flex-grow: 1;
+    background-color: aliceblue;
+}
+.menu-category {
+    position: relative;
+    padding: 0px 20px;
+}
+.header-bottom .sub-menu input:checked + ul {
+    left: 0px;
+    width: 300%;
+}
+.header-search input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.header-search button {
+    background-color: #ffba00;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-items {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: beige ;
+    margin: 5px;
+}
+.content input:checked + div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.content input:checked + div > a {
+    display: block;
+    text-align: center;
+    max-width: 20%;
+}
+.content label {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: bisque;
+    margin: 20px;
+    background-image: url(https://cdn2.iconfinder.com/data/icons/most-useful-icons-4/50/GRID-512.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content input:checked label {
+    background-color: rgb(72, 168, 35);
+    background-image: url(https://static.thenounproject.com/png/650045-200.png);
+}
+.content input {
+    display: none;
+}
