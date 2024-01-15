@@ -159,62 +159,64 @@ input:focus {
 /* CSS cho trang */
 .main-container {
 	background-color: #efefef;
-	justify-content: center;
-	padding: 0 50px;
+	padding: 0 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .container {
+	justify-content: center;
 	gap: 30px;
-	margin: 0 50px;
 }
 /* CSS cho Sidebar */
 .sidebar {
 	text-align: center;
-	width: 20%;
+	width: 230px;
 }
 .sidebar-items a {
 	display: flex;
 	align-items: center;
+	padding: 5px 10px;
 }
 .sidebar img {
 	max-width: 32px;
 	margin-right: 10px;
-}
-.sidebar-items {
-	padding: 5px 10px;
 }
 .sidebar-items:hover {
 	background-color: #efefef;
 }
 /* CSS cho nội dung chính */
 .content {
-	max-width: 80%;
+	max-width: 900px;
 }
 /* CSS cho banner đầu trang */
 .top-banner {
-	margin: 20px 0;
-	padding: 20px;
 	display: flex;
 	justify-content: center;
-	gap: 10px;
+	gap: 5px;
 }
-
-.top-banner-left > div {
+/* .top-banner-left {
+	overflow: hidden;
+} */
+.top-banner-left div {
 	background-color: #efefef;
-	width: 270px;
-	height: 270px;
+}
+.top-banner-left img {
+	width: 300px;
+	height: 300px;
 }
 .top-banner-right {
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	row-gap: 10px;
 	gap: 10px;
 }
-.top-banner-right>div {
-	width: 130px;
-	height: 130px;
+.top-banner-right div {
+	max-width: 22%;
+	height: auto;
 	background-color: #efefef;
+	overflow: hidden;
 }
+
 /* CSS cho Giá tốt hôm nay */
 .deal-today-header {
 	display: flex;
