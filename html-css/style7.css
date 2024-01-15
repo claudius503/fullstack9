@@ -200,6 +200,6 @@ label {
     justify-content: center;
     background-color: red;
 }
-.slide {
+.slider-element .slide {
     display: none;
 }
