@@ -189,6 +189,9 @@ label {
 .slider-element {
     margin-top: 50px;
 }
+.slider-element input {
+    display: none;
+}
 .slider-element div:first-child {
     display: flex;
 }
