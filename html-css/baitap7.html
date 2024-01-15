@@ -29,11 +29,9 @@
                         <li><a href="#">Đóng góp ý kiến</a></li>
                     </ul>
                 </li>
-                <li class="sub-menu">
-                    <label for="checkbox-seller"><i class="fa-solid fa-tag"></i></label>
-                    <label for="checkbox-seller">Dành cho người bán</label>
-                    <label for="checkbox-seller"><i class="fa-solid fa-chevron-down"></i></label>
-                    <input type="checkbox" name="menu-seller" id="checkbox-seller">
+                <li class="menu-seller sub-menu">
+                    <label for="checkbox-seller"><i class="fa-solid fa-tag"></i>Dành cho người bán<i class="fa-solid fa-chevron-down"></i></label>
+                    <input type="checkbox" name="seller" id="checkbox-seller">
                     <ul>
                         <li><a href="#">Đóng góp ý kiến</a></li>
                         <li><a href="#">Đóng góp ý kiến</a></li>
@@ -58,25 +56,16 @@
                 <button class="border-small" type="submit">Tìm kiếm</button>
             </form>
             <ul class="left-menu">
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                <li>
-                    <input type="checkbox" name="" id="">
-                    <ul>
-                        <li>Slider</li>
-                    </ul>
-                </li>
-                <li><a href="#">Đăng tin</a></li>
+                <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li class="new-post border-small"><a href="#">Đăng tin</a></li>
             </ul>
         </div>
     </header>
-    <div class="slider">
-
-    </div>
     <div class="content">
-        <label for="view-product"></label>
-        <input type="checkbox" id="view-product">
+        <input type="checkbox" id="view-product" />
+        <label class="label-view" for="view-product"></label>
         <div class="product-list">
             <a class="product-items" href="#">
                 <img src="https://hyundai-138phamvandong.com/wp-content/uploads/2022/04/es_8-1-16-600x506-1-300x253.png" alt="">
@@ -150,6 +139,27 @@
                     <span>Bán chuyên</span><span>Bán chuyên</span>
                 </span>
             </a>
+        </div>
+        <h3>Bài tập slider</h3>
+        <div class="slider-element row">
+            <input type="radio" name="slide" id="slide1">
+            <div class="slide row">
+                <label class="slider-button" for="slide3">Back</label>
+                <img src="https://cdn.chotot.com/admincentre/7RD7tjiOUOmTf6EhjaPHCPzAzEBKRm341mfChVDy0KM/preset:raw/plain/093d74596e39d0b90f042a26d5325014-2856943825870710768.jpg" width="500px">
+                <label class="slider-button" for="slide2">Next</label>
+            </div>
+            <input type="radio" name="slide" id="slide2">
+            <div class="slide row">
+                <label class="slider-button" for="slide1">Back</label>
+                <img src="https://cdn.chotot.com/admincentre/7RD7tjiOUOmTf6EhjaPHCPzAzEBKRm341mfChVDy0KM/preset:raw/plain/093d74596e39d0b90f042a26d5325014-2856943825870710768.jpg" width="500px">
+                <label class="slider-button" for="slide3">Next</label>
+            </div>
+            <input type="radio" name="slide" id="slide3">
+            <div class="slide row">
+                <label class="slider-button" for="slide2">Back</label>
+                <img src="https://cdn.chotot.com/admincentre/7RD7tjiOUOmTf6EhjaPHCPzAzEBKRm341mfChVDy0KM/preset:raw/plain/093d74596e39d0b90f042a26d5325014-2856943825870710768.jpg" width="500px">
+                <label class="slider-button" for="slide1">Next</label>
+            </div>
         </div>
     </div>
 </body>
