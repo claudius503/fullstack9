@@ -1,0 +1,231 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    display: inline-block;
+}
+i {
+    margin-right: 10px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.border-small {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.flex-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+/* css header */
+header {
+    background-color: #ffba00;
+}
+header i {
+    color: rgb(77, 77, 77);
+}
+header a {
+    color: rgb(77, 77, 77);
+}
+.header-top {
+    margin-left: 30px;
+}
+.header-top > ul > li {
+    display: inline-block;
+    position: relative;
+}
+.header-top a, .header-bottom a {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+}
+header > div {
+    justify-content: space-between;
+    padding: 0px 0ps 30px 10px;
+    gap: 5px;
+}
+.menu-seller {
+    background-color: aliceblue;
+    border-bottom-left-radius: 10px;
+}
+.header-bottom {
+    padding: 5px 0px 10px 0px;
+}
+.header-bottom {
+    text-align: center;
+    margin: 0 30px;
+}
+.header-bottom img {
+    max-height: 30px;
+}
+.header-bottom form, .header-bottom input {
+    flex-grow: 1;
+    background-color: aliceblue;
+}
+.header-search input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.header-search button {
+    background-color: #ffba00;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+}
+.new-post {
+    background-color: #f57600;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 10px 20px;;
+}
+.sub-menu ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.sub-menu li {
+    position: relative;
+    text-align: left;
+}
+.sub-menu li:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.sub-menu li:hover > ul {
+    display: block;
+    background-color: rgb(241, 241, 241);
+    min-width: 250px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.sub-menu > li > ul {
+    left: 0;
+    top: 100%;
+}
+.sub-menu > li > ul ul {
+    left: 100%;
+    top: 0;
+}
+/* CSS nội dung trang */
+body {
+    background-color: rgb(228, 228, 228);
+}
+.main {
+    margin: 0 auto;
+}
+.content {
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-items {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: beige ;
+    margin: 5px;
+}
+.product-items img {
+    width: 70%;
+    object-fit: contain;
+}
+.content > input {
+    display: none;
+}
+.content input:checked ~ div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.content input:checked ~ div > a {
+    display: block;
+    text-align: center;
+    max-width: 20%;
+}
+.content .label-view {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 20px;
+    background-image: url(https://static.thenounproject.com/png/650045-200.png);
+    background-color: bisque;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content input:checked + .label-view {
+    background-color: bisque;
+    background-image: url(https://cdn2.iconfinder.com/data/icons/most-useful-icons-4/50/GRID-512.png);
+}
+/* css slider */
+.content-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-element {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.slider-element input {
+    display: none;
+}
+.slider-element div:first-child {
+    display: flex;
+}
+.slider-button {
+    padding: 10px 20px;
+    background-color: bisque;
+    user-select: none;
+    margin: 20px;
+}
+.slider-element input:checked + .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide {
+    display: none;
+    position: relative;
+}
+.slider-button:hover {
+    transform:scale(120%);
+    -webkit-transform:scale(120%);
+    -moz-transform:scale(120%);
+    -ms-transform:scale(120%);
+    -o-transform:scale(120%);
+}
