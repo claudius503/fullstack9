@@ -101,6 +101,7 @@ header > div {
 .sub-menu ul {
     display: none;
     position: absolute;
+    z-index: 1;
 }
 .sub-menu li {
     position: relative;
@@ -227,7 +228,4 @@ body {
     -moz-transform:scale(120%);
     -ms-transform:scale(120%);
     -o-transform:scale(120%);
-}
-.back, .next {
-    z-index: -1;
 }
