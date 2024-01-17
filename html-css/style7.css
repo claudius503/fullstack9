@@ -228,3 +228,6 @@ body {
     -ms-transform:scale(120%);
     -o-transform:scale(120%);
 }
+.back, .next {
+    z-index: -1;
+}
