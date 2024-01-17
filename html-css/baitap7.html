@@ -20,49 +20,81 @@
                 <li><a href="#">Đóng góp ý kiến</a></li>
                 <li><a href="#">Tải ứng dụng</a></li>
                 <li><a href="#">Trợ giúp</a></li>
-                <li class="sub-menu">
-                    <label for="checkbox-buyer"><i class="fa-solid fa-tag"></i> Dành cho người mua <i class="fa-solid fa-chevron-down"></i></label>
-                    <input type="checkbox" name="menu-buyer" id="checkbox-buyer">
-                    <ul>
-                        <li><a href="#">Đóng góp ý kiến</a></li>
-                        <li><a href="#">Đóng góp ý kiến</a></li>
-                        <li><a href="#">Đóng góp ý kiến</a></li>
-                    </ul>
-                </li>
-                <li class="menu-seller sub-menu">
-                    <label for="checkbox-seller"><i class="fa-solid fa-tag"></i>Dành cho người bán<i class="fa-solid fa-chevron-down"></i></label>
-                    <input type="checkbox" name="seller" id="checkbox-seller">
-                    <ul>
-                        <li><a href="#">Đóng góp ý kiến</a></li>
-                        <li><a href="#">Đóng góp ý kiến</a></li>
-                        <li><a href="#">Đóng góp ý kiến</a></li>
-                    </ul>
-                </li>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="flex-items"><i class="fa-solid fa-bars"></i>Dành cho người bán<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Đóng góp ý kiến</a></li>
+                            <li><a href="#">Đóng góp ý kiến</a></li>
+                            <li><a href="#">Đóng góp ý kiến</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </ul>
         </div>
         <div class="header-bottom row">
             <a href="#"><img src="https://static.chotot.com/storage/APP_WRAPPER/logo/veh-logo-appwrapper.png" alt="logo"></a>
-            <div class="menu-category sub-menu">
-                <label for="checkbox-cate"><i class="fa-solid fa-bars"></i>Danh mục</label>
-                <input type="checkbox" name="menu-cate" id="checkbox-cate">
-                <ul>
-                    <li><a href="#">Đóng góp ý kiến</a></li>
-                    <li><a href="#">Đóng góp ý kiến</a></li>
-                    <li><a href="#">Đóng góp ý kiến</a></li>
-                </ul>
-            </div>
+            <ul class="sub-menu">
+                <li>
+                    <a class="flex-items"><i class="fa-solid fa-bars"></i>Danh mục<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Đóng góp ý kiến</a></li>
+                        <li><a href="#">Đóng góp ý kiến</a></li>
+                        <li><a href="#">Đóng góp ý kiến</a></li>
+                        <li>
+                            <a  class="flex-items" href="#">Đóng góp ý kiến <i class="fa-solid fa-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Đóng góp ý kiến</a></li>
+                                <li>
+                                    <a href="#">Đóng góp ý kiến</a>
+                                    <ul>
+                                        <li><a href="#">Đóng góp ý kiến</a></li>
+                                        <li><a href="#">Đóng góp ý kiến</a></li>
+                                        <li><a href="#">Đóng góp ý kiến</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Đóng góp ý kiến</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Đóng góp ý kiến</a></li>
+                        <li><a href="#">Đóng góp ý kiến</a></li>
+                    </ul>
+                </li>
+            </ul>
             <form class="header-search row border-small" action="">
                 <input type="search">
                 <button class="border-small" type="submit">Tìm kiếm</button>
             </form>
-            <ul class="left-menu">
-                <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <li class="new-post border-small"><a href="#">Đăng tin</a></li>
-            </ul>
+            <a href="#"><i class="fa-regular fa-bell"></i></a>
+            <a href="#"><i class="fa-solid fa-message"></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a class="new-post border-small" href="#">Đăng tin</a>
         </div>
     </header>
+    <div class="content-slider">
+        <h3>Bài tập slider</h3>
+        <div class="slider-element row">
+            <input type="radio" name="slide" id="slide1" checked>
+            <div class="slide row" id="slider1">
+                <label class="slider-button" for="slide3">Back</label>
+                <img src="https://cdn.chotot.com/admincentre/7RD7tjiOUOmTf6EhjaPHCPzAzEBKRm341mfChVDy0KM/preset:raw/plain/093d74596e39d0b90f042a26d5325014-2856943825870710768.jpg" width="800px">
+                <label class="slider-button" for="slide2">Next</label>
+            </div>
+            <input type="radio" name="slide" id="slide2">
+            <div class="slide row">
+                <label class="slider-button" for="slide1">Back</label>
+                <img src="https://cdn.chotot.com/admincentre/cWLoju8Y2ym11MLx91SMfazlWXQ-cTcKmYT9v1Lmfp8/preset:raw/plain/ef3be935782d496456bf9b8e5e7f072a-2824954100074025769.jpg" width="800px">
+                <label class="slider-button" for="slide3">Next</label>
+            </div>
+            <input type="radio" name="slide" id="slide3">
+            <div class="slide row">
+                <label class="slider-button" for="slide2">Back</label>
+                <img src="https://cdn.chotot.com/admincentre/-4jRbaKMS6W9bwLYciVK9jO6-Kr-fB1ofnW7WEKqk7M/preset:raw/plain/d85499d34175f0c59a8851f827ebeb73-2860597506351454432.jpg" width="800px">
+                <label class="slider-button" for="slide1">Next</label>
+            </div>
+        </div>
+    </div>
+    <h3>Bài tập chuyển cách xem danh sách sản phẩm</h3>
     <div class="content">
         <input type="checkbox" id="view-product" />
         <label class="label-view" for="view-product"></label>
@@ -141,28 +173,6 @@
             </a>
         </div>
     </div>
-    <div class="content-slider">
-        <h3>Bài tập slider</h3>
-        <div class="slider-element row">
-            <input type="radio" name="slide" id="slide1" checked>
-            <div class="slide row" id="slider1">
-                <label class="slider-button" for="slide3">Back</label>
-                <img src="https://cdn.chotot.com/admincentre/7RD7tjiOUOmTf6EhjaPHCPzAzEBKRm341mfChVDy0KM/preset:raw/plain/093d74596e39d0b90f042a26d5325014-2856943825870710768.jpg" width="800px">
-                <label class="slider-button" for="slide2">Next</label>
-            </div>
-            <input type="radio" name="slide" id="slide2">
-            <div class="slide row">
-                <label class="slider-button" for="slide1">Back</label>
-                <img src="https://cdn.chotot.com/admincentre/cWLoju8Y2ym11MLx91SMfazlWXQ-cTcKmYT9v1Lmfp8/preset:raw/plain/ef3be935782d496456bf9b8e5e7f072a-2824954100074025769.jpg" width="800px">
-                <label class="slider-button" for="slide3">Next</label>
-            </div>
-            <input type="radio" name="slide" id="slide3">
-            <div class="slide row">
-                <label class="slider-button" for="slide2">Back</label>
-                <img src="https://cdn.chotot.com/admincentre/-4jRbaKMS6W9bwLYciVK9jO6-Kr-fB1ofnW7WEKqk7M/preset:raw/plain/d85499d34175f0c59a8851f827ebeb73-2860597506351454432.jpg" width="800px">
-                <label class="slider-button" for="slide1">Next</label>
-            </div>
-        </div>
-    </div>
+    
 </body>
 </html>

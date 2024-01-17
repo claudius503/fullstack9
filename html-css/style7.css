@@ -3,6 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
 a {
     text-decoration: none;
 }
@@ -16,6 +21,7 @@ i {
 .row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .border-small {
     border-radius: 5px;
@@ -24,6 +30,13 @@ i {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.flex-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+/* css header */
 header {
     background-color: #ffba00;
 }
@@ -39,67 +52,27 @@ header a {
 .header-top > ul > li {
     display: inline-block;
     position: relative;
-    padding: 10px 10px;
+}
+.header-top a, .header-bottom a {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
 }
 header > div {
     justify-content: space-between;
     padding: 0px 0ps 30px 10px;
-    margin-bottom: 5px;
     gap: 5px;
-}
-.header-bottom {
-    padding: 5px 30px;
-}
-.header-bottom > ul > li {
-    display: inline-block;
-}
-.sub-menu label:hover {
-    color: rgb(119, 119, 119);
-}
-.sub-menu > ul {
-    display: none;
-}
-label {
-    user-select: none;
-}
-.sub-menu input {
-    display: none;
-}
-.sub-menu input:checked + ul {
-    display: inline-block;
-    position: absolute;
-    top: 40px;
-    background-color: rgb(228, 228, 228);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.sub-menu input:checked + ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-}
-.sub-menu input:checked + ul li {
-    text-align: center;
-    border-bottom: 1px solid rgb(199, 199, 199);
-}
-.sub-menu input:checked + ul li:last-child {
-    border: none;
-}
-.sub-menu input:checked + ul li:hover {
-    background-color: rgb(167, 167, 167);
-}
-.header-top .sub-menu input:checked + ul {
-    right: 5px;
-    width: 150%;
 }
 .menu-seller {
     background-color: aliceblue;
     border-bottom-left-radius: 10px;
 }
 .header-bottom {
+    padding: 5px 0px 10px 0px;
+}
+.header-bottom {
     text-align: center;
+    margin: 0 30px;
 }
 .header-bottom img {
     max-height: 30px;
@@ -107,14 +80,6 @@ label {
 .header-bottom form, .header-bottom input {
     flex-grow: 1;
     background-color: aliceblue;
-}
-.menu-category {
-    position: relative;
-    padding: 0px 20px;
-}
-.header-bottom .sub-menu input:checked + ul {
-    left: 0px;
-    width: 300%;
 }
 .header-search input {
     border: none;
@@ -129,12 +94,45 @@ label {
 }
 .new-post {
     background-color: #f57600;
-    padding: 10px 20px;
-}
-.new-post a {
     color: aliceblue;
     text-transform: uppercase;
+    padding: 10px 20px;;
 }
+.sub-menu ul {
+    display: none;
+    position: absolute;
+}
+.sub-menu li {
+    position: relative;
+    text-align: left;
+}
+.sub-menu li:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.sub-menu li:hover > ul {
+    display: block;
+    background-color: rgb(241, 241, 241);
+    min-width: 250px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.sub-menu > li > ul {
+    left: 0;
+    top: 100%;
+}
+.sub-menu > li > ul ul {
+    left: 100%;
+    top: 0;
+}
+/* CSS nội dung trang */
 .content {
     display: flex;
     flex-direction: column;
@@ -180,6 +178,7 @@ label {
     background-color: bisque;
     background-image: url(https://cdn2.iconfinder.com/data/icons/most-useful-icons-4/50/GRID-512.png);
 }
+/* css slider */
 .content-slider {
     display: flex;
     flex-direction: column;
@@ -199,6 +198,7 @@ label {
 .slider-button {
     padding: 10px 20px;
     background-color: bisque;
+    user-select: none;
     margin: 20px;
 }
 .slider-element input:checked + .slide {
@@ -208,4 +208,11 @@ label {
 }
 .slide {
     display: none;
+}
+.slider-button:hover {
+    transform:scale(120%);
+    -webkit-transform:scale(120%);
+    -moz-transform:scale(120%);
+    -ms-transform:scale(120%);
+    -o-transform:scale(120%);
 }
