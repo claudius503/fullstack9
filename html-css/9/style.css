@@ -3,3 +3,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu {
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+}
+#menu ul, #menu > li {
+    background-color: rgb(48, 48, 48);
+    display: inline-block;
+}
+#menu a {
+    height: 50px;
+    line-height: 50px;
+    color: aliceblue;
+    padding: 10px;
+}
+#menu .icon-menu {
+    color: beige;
+    padding: 0px 0px 0px 20px;
+}
+#menu .right .icon-menu {
+    transform: rotate(-90deg) !important;
+    -webkit-transform: rotate(-90deg) !important;
+    -moz-transform: rotate(-90deg) !important;
+    -ms-transform: rotate(-90deg) !important;
+    -o-transform: rotate(-90deg) !important;
+    padding-right: 20px;
+}
+#menu li {
+    position: relative;
+    overflow: visible;
+}
+#menu > li:not(:last-child) {
+    border-right: 1px solid whitesmoke;
+}
+#menu ul {
+    display: none;
+    position: absolute;
+}
+#menu li:hover {
+    background-color: black;
+}
+#menu li:hover > ul {
+    display: inline;
+    width: max-content;
+    text-align: left;
+    top: 100%;
+    left: 0;
+}
+#menu ul li:hover > ul {
+    display: inline-block;
+    top: 0;
+    left: 100%;
+}
+#menu ul li:hover > a > .icon-menu {
+    padding: 0px 20px 0px 20px;
+    transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    -moz-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    -o-transform: rotate(0deg) !important;
+}
