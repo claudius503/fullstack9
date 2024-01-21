@@ -9,32 +9,105 @@
 </head>
 <body>
     <header>
-        <ul id="menu">
+        <ul class="main-menu">
             <li><a href="#">Trang chủ</a></li>
             <li><a href="#">Giới thiệu</a></li>
-            <li>
-                <a href="#">Sub Menu Hover<i class="icon-menu fa-solid fa-chevron-down"></i></a>
-                <ul>
-                    <li><a href="#">Danh mục 1</a></li>
-                    <li><a href="#">Danh mục 2</a></li>
-                    <li class="right">
-                        <a href="#">Danh mục Danh mục Danh mục 3 <i class="icon-menu fa-solid fa-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Sản phẩm 1</a></li>
-                            <li><a href="#">Sản phẩm 2</a></li>
-                            <li><a href="#">Sản phẩm 3 Sản phẩm 3 Sản phẩm 3</a></li>
-                            <li><a href="#">Sản phẩm 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Danh mục 4</a></li>
-                </ul>
-            </li>
+            <ul class="menu">
+                <li>
+                    <a href="#">Sub Menu Hover<i class="icon-menu fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Danh mục 1</a></li>
+                        <li><a href="#">Danh mục 2</a></li>
+                        <li class="right">
+                            <a href="#">Danh mục Danh mục Danh mục 3 <i class="icon-menu fa-solid fa-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#">Sản phẩm 1</a></li>
+                                <li><a href="#">Sản phẩm 2</a></li>
+                                <li><a href="#">Sản phẩm 3 Sản phẩm 3 Sản phẩm 3</a></li>
+                                <li><a href="#">Sản phẩm 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Danh mục 4</a></li>
+                    </ul>
+                </li>
+            </ul>
             <li><a href="#">Liên hệ</a></li>
-            <li><a href="#">Mobile 1</a></li>
+            <ul class="menu-click">
+                <li>
+                    <input type="checkbox" id="dropdown-menu">
+                    <label for="dropdown-menu">Sub Menu Click<i class="icon-menu fa-solid fa-chevron-down"></i><span></span></label>
+                    <ul>
+                        <li><a href="#">Danh mục 1</a></li>
+                        <li><a href="#">Danh mục 2</a></li>
+                        <li class="right">
+                            <input type="checkbox" id="dropdown-submenu">
+                            <label for="dropdown-submenu">Sub Menu Click Sub Menu Click<i class="icon-menu fa-solid fa-chevron-down"></i><span></span></label>
+                            <ul>
+                                <li><a href="#">Sản phẩm 1</a></li>
+                                <li><a href="#">Sản phẩm 2</a></li>
+                                <li><a href="#">Sản phẩm 3 Sản phẩm 3 Sản phẩm 3</a></li>
+                                <li><a href="#">Sản phẩm 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Danh mục 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="mobile-menu">
+                <li>
+                    <input type="checkbox" id="mobile-dropdown">
+                    <label for="mobile-dropdown"><i class="icon-menu fa-solid fa-bars"></i><span></span></label>
+                    <ul>
+                        <li><a href="#">Danh mục 1</a></li>
+                        <li><a href="#">Danh mục 2</a></li>
+                        <li>
+                            <input type="checkbox" id="mobile-sub">
+                            <label for="mobile-sub">Danh mục sản phẩm rất dài 3<span></span></label>
+                            <ul>
+                                <li><a href="#">Sản phẩm 1</a></li>
+                                <li><a href="#">Sản phẩm 2</a></li>
+                                <li>
+                                    <input type="checkbox" id="mobile-sub2">
+                                    <label for="mobile-sub2">Sản phẩm rất dài 3<span></span></label>
+                                    <ul>
+                                        <li><a href="#">Quần áo</a></li>
+                                        <li><a href="#">Túi xách</a></li>
+                                        <li><a href="#">Giày dép</a></li>
+                                        <li><a href="#">Phụ kiện thời trang</a></li>
+                                    </ul>
+                                <li><a href="#">Sản phẩm 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Danh mục 4</a></li>
+                    </ul>
+                </li>
+            </ul>
         </ul>
     </header>
     <div class="main">
-        <div class="switch"></div>
+        <div class="switch">
+            <h3>Bài tập Switch</h3>
+            <div class="switch-group">
+                <input type="checkbox" id="switch-element">
+                <label for="switch-element"><span class="switch-btn"><span></span></span></label>
+                
+            </div>
+        </div>
+        <div class="toolkit-section">
+            <h3>Bài tập Toolkit</h3>
+            <div class="top-toolkit">
+                <p>Đây là bài tập <span class="toolkit">Fullstack 9<span>Khóa học cung cấp các kiến thức căn bản để học viên có thể đi làm được ở vị trí fullstack web developer</span></span> về Toolkit Top</p>
+            </div>
+            <div class="left-toolkit">
+                <p>Đây là bài tập <span class="toolkit">Fullstack 9<span>Khóa học cung cấp các kiến thức căn bản để học viên có thể đi làm được ở vị trí fullstack web developer</span></span> về Toolkit Left</p>
+            </div>
+            <div class="right-toolkit">
+                <p>Đây là bài tập <span class="toolkit">Fullstack 9<span>Khóa học cung cấp các kiến thức căn bản để học viên có thể đi làm được ở vị trí fullstack web developer</span></span> về Toolkit Right</p>
+            </div>
+            <div class="bottom-toolkit">
+                <p>Đây là bài tập <span class="toolkit">Fullstack 9<span>Khóa học cung cấp các kiến thức căn bản để học viên có thể đi làm được ở vị trí fullstack web developer</span></span> về Toolkit Bottom</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
