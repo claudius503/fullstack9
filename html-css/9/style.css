@@ -244,6 +244,14 @@ h3 {
     display: inline-block;
     user-select: none;
 }
+
+.border-med {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 .switch-btn {
     display: flex;
     align-items: center;
@@ -320,11 +328,6 @@ h3 {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .top-toolkit .toolkit:hover > span::before {
     content: " ";
@@ -360,11 +363,6 @@ h3 {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .left-toolkit .toolkit:hover > span::before {
     content: " ";
@@ -375,11 +373,11 @@ h3 {
     position: absolute;
     left: 100%;
     top: 50%;
-    transform: translatey(-50%);
-    -webkit-transform: translatey(-50%);
-    -moz-transform: translatey(-50%);
-    -ms-transform: translatey(-50%);
-    -o-transform: translatey(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 /* Right Toolkit */
 .right-toolkit, .right-toolkit, .bottom-toolkit {
@@ -400,11 +398,6 @@ h3 {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .right-toolkit .toolkit:hover > span::before {
     content: " ";
@@ -437,11 +430,6 @@ h3 {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .bottom-toolkit .toolkit:hover > span::before {
     content: " ";
