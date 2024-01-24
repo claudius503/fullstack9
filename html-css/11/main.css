@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background-color: rgb(224, 224, 224);
+    font-size: 62.5%;
+    padding: 0 40px;
+}
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px;
+}
+.main-container {
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 3px 5px 4px rgba(129, 129, 129, 0.623);
+}
+.main-container > span {
+    margin: 30px;
+}
+.border {
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.chart1 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(211, 211, 211);
+    position: relative;
+    background-image: conic-gradient(red 20%, orange 20%, orange 20%, orange 50%, green 50%);
+}
+.chart1 > span {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient( rgb(255, 255, 255) 60%, rgb(115, 115, 115) 95%, rgb(87, 87, 87));
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.chart2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(211, 211, 211);
+    position: relative;
+    background-image: conic-gradient(red , red 100%);
+}
+.chart2 > span {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-image: conic-gradient(rgba(255, 0, 0, 0) , rgba(255, 0, 0, 0) 70%,green 70%, green);
+}
+.chart2 span:hover {
+    transform: scale(120%);
+    -webkit-transform: scale(120%);
+    -moz-transform: scale(120%);
+    -ms-transform: scale(120%);
+    -o-transform: scale(120%);
+}
+.chart3 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-image:repeating-conic-gradient(rgba(168, 168, 168, 0) 0deg,rgba(168, 168, 168, 0) 10deg, rgba(166, 166, 166, 0.223) 10deg,rgba(166, 166, 166, 0.253) 20deg );
+}
+.chart3 > span {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-image: conic-gradient(rgb(255, 0, 0) 120deg, rgba(255, 166, 0, 0) 120deg, rgba(255, 166, 0, 0) 120deg, rgba(255, 166, 0, 0) );
+}
+.chart3 > span::after {
+    content: " ";
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient( rgb(255, 255, 255) 60%, rgb(115, 115, 115) 95%, rgb(87, 87, 87));
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
