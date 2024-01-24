@@ -17,6 +17,7 @@ h1 {
 }
 .main-container {
     background-color: rgb(255, 255, 255);
+    min-width: fit-content;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -97,4 +98,37 @@ h1 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.chart4 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-image:repeating-conic-gradient(rgba(168, 168, 168, 0) 0deg,rgba(168, 168, 168, 0) 10deg, rgba(166, 166, 166, 0.223) 10deg,rgba(166, 166, 166, 0.253) 20deg );
+}
+.chart4 > span {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-image: conic-gradient(-90deg, rgb(255, 0, 0) 10deg, rgba(255, 166, 0, 0) 10deg, rgba(255, 166, 0, 0) 10deg, rgba(255, 166, 0, 0) );
+}
+.chart4 > span > span {
+    content: " ";
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient( rgb(255, 255, 255) 60%, rgb(115, 115, 115) 95%, rgb(87, 87, 87));
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.chart4 > span::after {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-image: conic-gradient( rgb(255, 0, 0) 10deg, rgba(255, 166, 0, 0) 10deg, rgba(255, 166, 0, 0) 10deg, rgba(255, 166, 0, 0) );
 }
