@@ -886,7 +886,7 @@ footer .info {
 }
 @media screen and (max-width:768px) {
 	.info > div {
-		width: 50%;
+		width: 48%;
 	}
 	.ft-cate-content > div {
 		width: 32%;
