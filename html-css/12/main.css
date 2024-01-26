@@ -475,11 +475,11 @@ input:focus {
 		display: none;
 	}
 	.top-banner {
-		display: inline-block;
+		flex-wrap: nowrap;
 	}
-	.top-banner-left {
+	/* .top-banner-left {
 		display: none;
-	}
+	} */
 	.sidebar-col {
 		position: relative;
 	}
@@ -522,6 +522,12 @@ input:focus {
 	
 }
 @media screen and (max-width: 768px) {
+	.top-banner {
+		flex-direction: column;
+	}
+	.top-banner-left {
+		max-width: 90%;
+	}
 	.top-banner-right > a {
 		width: 45%;
 	}
