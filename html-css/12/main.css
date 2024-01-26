@@ -534,7 +534,7 @@ input:focus {
 }
 @media screen and (max-width: 500px) {
 	.top-banner-right > a {
-		width: 100%;
+		width: 45%;
 	}
 	.product-items {
 		width: 100% !important;
