@@ -236,6 +236,9 @@ input:focus {
 	background-color: red;
 	padding: 3px;
 }
+.header-right-bottom {
+	justify-content: space-between;
+}
 .header-text-link li {
 	list-style: none;
 	display: inline-block;
