@@ -3,27 +3,52 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Inter', sans-serif;
+	font-size: 62.5%;
+}
+a, p, span, i , label{
+	font-size: 1.3rem;
+}
+h3,h4,h5,h6 {
+	font-size: 1.5rem;
+}
+h2 {
+	font-size: 1.7rem;
+}
+h1 {
+	font-size: 2rem;
+}
 .box {
 	background-color:#ffffff;
-	margin: 20px 0;
+	margin: 10px 0;
 	padding: 20px 20px;
 }
 .row {
 	display: flex;
 }
 .border-medium {
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-o-border-radius: 20px;
-}
-.border-small {
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+}
+.border-small {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.border-large {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 /* CSS Header */
 header {
@@ -31,7 +56,8 @@ header {
 }
 .header-content {
 	background-color: rgb(255, 255, 255);
-	margin: 0 10px;
+	width: 80%;
+	margin: 0 auto;
 	padding: 10px 0;
 	display: flex;
 	justify-content: center;
@@ -56,13 +82,24 @@ h3 {
 }
 .main-logo {
 	display: flex;
+	background-image: url(https://salt.tikicdn.com/ts/upload/c1/64/f7/4e6e925ea554fc698123ea71ed7bda26.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-height: 95px;
+	min-height: 75px;
+	min-width: 95px;
 }
-.main-logo img {
+.main-logo > span {
+	display: none;
+}
+/* .main-logo img {
 	max-height: 75px;
-}
+} */
 .header-right {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	gap: 10px;
 }
 
@@ -79,12 +116,14 @@ h3 {
 	align-items: center;
 }
 .header-search input {
+	z-index: 10;
 	border: 0;
 	flex-grow: 1;
 	padding-left: 25px;
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-color: #ffffff00;
 }
 input:focus {
 	outline: none;
@@ -94,6 +133,7 @@ input:focus {
 }
 .header-search button {
 	color: blue;
+	min-width: max-content;
 	padding: 10px 20px 10px 20px;
 	border: 0;
 	border-top-right-radius: 10px;
@@ -105,18 +145,75 @@ input:focus {
 	background-color: rgb(190, 245, 245);
 	
 }
+.header-search input:focus + .placeholder {
+	display: none;
+}
+.header-search {
+	position: relative;
+}
+.placeholder {
+	color: #808080;
+	position: absolute;
+	text-wrap: nowrap;
+	transform: translate(30px);
+	-webkit-transform: translate(30px);
+	-moz-transform: translate(30px);
+	-ms-transform: translate(30px);
+	-o-transform: translate(30px);
+}
+.placeholder::after {
+	content: " ";
+	position: absolute;
+	background-color: #ffffff;
+	border-left: 1px solid rgb(131, 131, 131);
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	animation-name: plh;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-fill-mode: both;
+}
+@keyframes plh {
+	0% {
+		width: 0;
+	}
+	70% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
 .header-account  {
 	justify-content: flex-end;
 	padding-left: 10px;
 }
 .header-account li {
 	list-style: none;
+	min-width: max-content;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 .header-account li a {
 	padding: 10px 10px;
+	font-weight: 600;
+}
+.header-account li:first-child a {
+	color: rgb(0, 81, 255);
+}
+.header-account li:last-child a {
+	color: rgb(0, 81, 255);
+}
+.header-account li:last-child span {
+	color: #ffffff;
+	font-weight: 600;
+	text-align: center;
+	min-width: 20px;
 }
 .header-account li a:hover {
 	background-color: rgb(190, 245, 245);
@@ -128,13 +225,14 @@ input:focus {
 }
 .header-account li:last-child {
 	border-left: 2px solid rgb(178, 178, 178);
+	position: relative;
 	margin-left: 10px;
 	padding-left: 10px;
 }
 .header-account span {
-	top: -10px;
-	left: -10px;
-	position: relative;
+	position: absolute;
+	top: -5px;
+	right: 0px;
 	background-color: red;
 	padding: 3px;
 }
@@ -150,32 +248,137 @@ input:focus {
 	padding-left: 10px;
 	margin-left: 30px;
 }
+.header-location > label > input {
+	display: none;
+}
 .header-location > p {
 	display: inline-block;
 }
-.header-location > a {
+.header-location > label > span {
 	text-decoration: underline;
+	font-weight: 600;
+}
+.header-location label input:checked ~ .popup-location{
+	display: inline-block;
+}
+.header-location label {
+	user-select: none;
+}
+.header-location label input:checked ~ .overlay::after {
+	content: " ";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.popup-location {
+	display: none;
+	z-index: 999;
+	text-align: center;
+	position: fixed;
+	padding: 2rem;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: #ececec;
+	max-width: 30%;
+	-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-o-transform: translate(-50%);
+}
+.popup-location > div {
+	background-color: #fafafa;
+	padding: 20px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.popup-location form label {
+	text-align: left;
+	display: block;
+}
+.popup-location button {
+	margin: 20px 0;
+	background-color: rgb(255, 155, 25);
+	padding: 10px 40px;
+	border: none;
+}
+.popup-location form {
+	margin-top: 10px;
+}
+.popup-location span > hr {
+	width: 30%;
+	display: inline-block;
+}
+@media screen and (max-width: 992px) {
+	.header-content {
+		display: block;
+		margin: 0 5px;
+		width: 100%;
+		width: 100vw;
+	}
+	.main-logo {
+		display: inline-block;
+		left: 0;
+		background-image: url(https://salt.tikicdn.com/ts/upload/0e/07/78/ee828743c9afa9792cf20d75995e134e.png);
+		background-position: left;
+		max-height: 30px;
+		min-height: 20px;
+		margin-bottom: 5px;
+		line-height: 30px;
+	}
+	.main-logo > span {
+		padding-left: 80px;
+		display: inline-block;
+		color: rgb(32, 66, 255);
+		text-transform: capitalize;
+		font-weight: 700;
+	}
+	.header-account li:last-child {
+		padding: 0;
+		margin: 0;
+	}
+	.header-right-bottom {
+		display: none;
+	}
+	.header-right-top ul li:not(:last-child) {
+		display: none;
+	}
+	.header-account li:last-child {
+		border: none;
+	}
+	.sidebar-col {
+		min-width: max-content;
+	}
+	.box {
+		padding: 0.5rem 1.5rem;
+	}
 }
 /* CSS cho trang */
 .main-container {
 	background-color: #efefef;
-	padding: 0 30px;
-	margin-left: auto;
-	margin-right: auto;
 }
 .container {
+	margin: 0 auto;
+	width: 80%;
 	justify-content: center;
-	gap: 30px;
+	gap: 10px;
 }
 /* CSS cho Sidebar */
 .sidebar {
 	text-align: center;
-	width: 230px;
 }
-.sidebar-items a {
-	display: flex;
-	align-items: center;
-	padding: 5px 10px;
+.sidebar-items > a {
+	background-image: url(https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding:1rem 2rem 1rem 4rem ;
+	display: inline-block;
+	min-width: max-content;
 }
 .sidebar img {
 	max-width: 32px;
@@ -184,43 +387,164 @@ input:focus {
 .sidebar-items:hover {
 	background-color: #efefef;
 }
+.sidebar-items {
+	max-width: 100%;
+}
+.sidebar-col label {
+	user-select: none;
+}
+.sidebar-col label h3::after {
+	content: " ";
+	width: 2rem;
+	height: 2rem;
+	padding-left: 3rem;
+	background-image: url(https://cdn.icon-icons.com/icons2/2582/PNG/512/menu_icon_153999.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+}
+.sidebar-col input {
+	display: none;
+}
 /* CSS cho nội dung chính */
 .content {
-	max-width: 900px;
+	flex-grow: 1;
 }
 /* CSS cho banner đầu trang */
 .top-banner {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 5px;
+	min-width: fit-content;
 }
-/* .top-banner-left {
-	overflow: hidden;
-} */
-.top-banner-left div {
+.top-banner a:hover {
+	transform: scale(105%);
+	-webkit-transform: scale(105%);
+	-moz-transform: scale(105%);
+	-ms-transform: scale(105%);
+	-o-transform: scale(105%);
+	box-shadow: rgba(0, 0, 0, 0.397) 0px 7px 29px 0px;
+}
+.top-banner-left {
+	flex-grow: 1;
+	min-width: 30%;
+	position: relative;
 	background-color: #efefef;
+	overflow: hidden;
 }
 .top-banner-left img {
-	width: 300px;
-	height: 300px;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
 }
 .top-banner-right {
+	flex-grow: 2;
 	flex-wrap: wrap;
 	justify-content: center;
-	row-gap: 10px;
 	gap: 10px;
 }
-.top-banner-right div {
-	max-width: 22%;
+.top-banner-right img {
+	object-fit: cover;
+	width: 100%;
 	height: auto;
+}
+.top-banner-right > a {
+	width: 22%;
 	background-color: #efefef;
 	overflow: hidden;
 }
-
+@media screen and (max-width:992px) {
+	.main-container {
+		padding: 5px;
+	}
+	.container {
+		width: 100%;
+		margin: 0px 5px;
+		display: block;
+	}
+	.sidebar {
+		display: flex;
+		justify-content: center;
+		gap: 5px;
+	}
+	.sidebar ul {
+		display: none;
+	}
+	.top-banner {
+		display: inline-block;
+	}
+	.top-banner-left {
+		display: none;
+	}
+	.sidebar-col {
+		position: relative;
+	}
+	.sidebar-col label input:checked ~ ul {
+		display: inline-block;
+	}
+	.sidebar-col label input:checked + span {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		z-index: 8;
+	}
+	.sidebar-col label ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding: 3rem 3rem 3rem 2rem;
+		background-color: #ffffff;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+		box-shadow: 1rem 1.5rem 1rem 1rem rgba(0, 0, 0, 0.288);
+		z-index: 9;
+	}
+	.sidebar .sidebar-col:last-child label ul {
+		left: 100%;
+		transform: translate(-100%);
+		-webkit-transform: translate(-100%);
+		-moz-transform: translate(-100%);
+		-ms-transform: translate(-100%);
+		-o-transform: translate(-100%);
+	}
+	.product-items {
+		width: 30% !important;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.top-banner-right > a {
+		width: 45%;
+	}
+	.product-items {
+		width: 45% !important;
+	}
+	.hot-product-items {
+		width: 45% !important;
+	}
+}
+@media screen and (max-width: 500px) {
+	.top-banner-right > a {
+		width: 100%;
+	}
+	.product-items {
+		width: 100% !important;
+	}
+	.hot-product-items {
+		width: 100% !important;
+	}
+}
 /* CSS cho Giá tốt hôm nay */
 .deal-today-header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 20px;
 }
 .deal-today-header div:first-child {
@@ -238,34 +562,74 @@ input:focus {
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 }
+.deal-today-header a {
+	background-image: url(https://www.freeiconspng.com/uploads/right-arrow-icon-27.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	padding-right: 2rem;
+	text-decoration: underline;
+}
 .deal-today-content {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	gap: 1rem;
+	justify-content: space-around;
 }
 .product-items {
-	width: 150px;
+	width: 30%;
 	padding: 20px 10px 20px 10px;
-	text-align: center;
-	height: 250px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	background-color: #f8f8f8;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+.product-items .price::before {
+	content: "-20%";
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #ffffff;
+	font-size: 1.3rem;
+	background-color: rgb(255, 123, 123);
+	padding: 0.5rem;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
 }
 .product-items:hover {
-	box-shadow: #dcdcdc;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: scale(105%);
+	-webkit-transform: scale(105%);
+	-moz-transform: scale(105%);
+	-ms-transform: scale(105%);
+	-o-transform: scale(105%);
 }
 .product-items .price {
 	display: inline-block;
 	color: red;
-	font-style: bold;
-	letter-spacing: 2px;
+	font-weight: 700;
 	padding: 10px 0;
+	font-size: 1.7rem;
 }
 .product-items sup {
 	color: red;
 }
 .product-items .status {
 	background-color: rgb(255, 186, 186);
+	width: 100%;
 	position: relative;
-	font-size: 12px;
+	text-align: center;
+	font-size: 1.2rem;
 	color: #ffffff;
 	height: 25px;
 	line-height: 25px;
@@ -287,9 +651,9 @@ input:focus {
 	-ms-border-radius: 25px;
 	-o-border-radius: 25px;
 }
-.product-items > a > img {
-	max-width: 130px;
-	max-height: 130px;
+.product-items > img {
+	max-width: 100%;
+	max-height: auto;
 }
 /* CSS cho Sản phẩm bán chạy */
 .hot-product {
@@ -303,7 +667,8 @@ input:focus {
 .hot-product-header li {
 	list-style: none;
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 	border: 1px solid rgb(167, 167, 167);
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -316,43 +681,68 @@ input:focus {
 	padding: 5px 10px;
 }
 .hot-product-items {
-	padding: 20px 5px;
+	padding: 20px 15px;
 	text-align: center;
-	max-width: 200px;
+	width: 24%;
+	overflow: hidden;
+	background-color: #f8f8f8;
+}
+.hot-product-items:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: scale(105%);
+	-webkit-transform: scale(105%);
+	-moz-transform: scale(105%);
+	-ms-transform: scale(105%);
+	-o-transform: scale(105%);
 }
 .hot-product-items .price {
 	display: inline-block;
+	font-size: 1.7rem;
 }
 .hot-product-items img {
-	max-width: 190px;
+	width: 100%;
+	height: auto;
 }
-.hot-product-items img:nth-child(2) {
-	max-width: 130px;
+.hot-product-items .product-name::before {
 	display: block;
-	padding: 5px 5px;
+	content: " ";
+	height: 30px;
+	background-image: url(https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
 }
-.hot-product-items .star {
+.hot-product-items .product-name::after {
 	display: block;
-	font-size: 10px;
-	padding: 5px 0;
-	letter-spacing: -10px;
-	text-align: left;
+	content: " ";
+	margin-top: 5px;
+	max-width: 100px;
+	height: 20px;
+	background-image: url(https://www.freeiconspng.com/uploads/yellow-star-png-image--yellow-star-png-image-2.png);
+	background-repeat: repeat-x;
+	background-size: 20px;
 }
 .hot-product-items .product-name {
 	text-align: left;
-	font-size: 13px;
+	font-size: 1.5rem;
 	padding: 5px 0;
 }
 .hot-product-items .status {
 	text-align: center;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	font-size: 1.2rem;
 }
-.hot-product-items .status > span img {
-	max-height: 35px;
-	width: 35px;
-	padding-top: 10px;
+.hot-product-items .status::before {
+	display: block;
+	content: " ";
+	width: 40px;
+	height: 30px;
+	background-image: url(https://salt.tikicdn.com/ts/tka/a8/31/b6/802e2c99dcce64c67aa2648edb15dd25.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 5px;
+	background-position: center;
 }
 .hot-product-items .price {
 	width: 100%;
@@ -365,6 +755,8 @@ input:focus {
 .hot-product-list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 5px;
 }
 /* CSS Footer */
 footer {
@@ -382,9 +774,14 @@ footer p > a {
 }
 footer .info {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-bottom: 20px;
 	border-bottom: 1px solid rgb(212, 212, 212);
+	flex-wrap: wrap;
+	gap: 5px;
+}
+.info > div {
+	overflow: hidden;
 }
 .info li {
 	font-size: 12px;
@@ -458,7 +855,9 @@ footer .info {
 }
 .ft-cate-content {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 5px;
 }
 .ft-cate1 {
 	width: 20%;
@@ -474,4 +873,28 @@ footer .info {
 }
 .ft-cate1 a:hover {
 	text-decoration: underline;
+}
+@media screen and (max-width:992px) {
+	.info > div {
+		width: 32%;
+	}
+	.ft-cate-content > div {
+		width: 32%;
+	}
+}
+@media screen and (max-width:768px) {
+	.info > div {
+		width: 50%;
+	}
+	.ft-cate-content > div {
+		width: 32%;
+	}
+}
+@media screen and (max-width:500px) {
+	.info > div {
+		width: 48%;
+	}
+	.ft-cate-content > div {
+		width: 48%;
+	}
 }

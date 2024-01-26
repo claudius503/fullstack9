@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Bài tập 6 - Tiki</title>
 </head>
 <body>
     <header class="row">
         <div class="header-content">
-            <a class="main-logo" href="#"><img src="https://salt.tikicdn.com/ts/upload/c1/64/f7/4e6e925ea554fc698123ea71ed7bda26.png" alt="logo tiki"></a>
+            <a class="main-logo" href="#"><span>Tốt & nhanh</span></a>
             <div class="header-right">
                 <div class="header-right-top">
                     <form class="header-search border-small" action="">
-                        <input type="search" placeholder="Tiêu dùng: Mua 1 tặng 1">
+                        <input type="search">
+                        <span class="placeholder">Tiêu dùng: Mua 1 tặng 1</span>
                         <button type="submit">Tìm kiếm</button>
                     </form>
                     <ul class="header-account row">
@@ -25,8 +29,7 @@
                             <a href="#"><i class="icon-header fa-regular fa-face-smile"></i>Tài khoản</a>
                         </li>
                         <li>
-                            <a href="#"><i class="icon-header fa fa-shopping-cart" aria-hidden="true"></i></a><span class="border-medium">0</span>
-                            
+                            <a href="#"><i class="icon-header fa fa-shopping-cart" aria-hidden="true"></i></a><span class="border-large">0</span>
                         </li>
                     </ul>
                 </div>
@@ -43,9 +46,26 @@
                         <li><a href="#">thể thao</a></li>
                     </ul>
                     <div class="header-location">
-                        <i class="icon-header fa-solid fa-location-dot"></i>
-                        <p>Giao đến:</p>
-                        <a href="#">Q. 1, P. Bến Nghé, Hồ Chí Minh</a>
+                        <label>
+                            <input type="checkbox">
+                            <i class="icon-header fa-solid fa-location-dot"></i>
+                            Giao đến: <span class="overlay">Q. 1, P. Bến Nghé, Hồ Chí Minh</span>
+                            <div class="popup-location">
+                                <div>
+                                    <div>
+                                        <h2>Địa chỉ giao hàng</h2>
+                                        <p>Hãy chọn địa chỉ nhận hàng để được dự báo thời gian giao hàng cùng phí đóng gói, vận chuyển một cách chính xác nhất.</p>
+                                        <button>Đăng nhập để chọn địa chỉ giao hàng</button>
+                                    </div>
+                                    <span><hr> hoặc <hr></span>
+                                    <form action="">
+                                        <label><input type="radio" name="loc">Phường Bến Nghé, Quận 1, Hồ Chí Minh</label>
+                                        <label><input type="radio" name="loc">Chọn khu vực giao hàng khác</label>
+                                    </form>
+                                </div>
+                                <button>Giao đến địa chỉ này</button>
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>    
@@ -54,44 +74,63 @@
     <div class="main-container">
         <div class="container row">
             <div class="sidebar">
-                <div class="sidebar-category box border-medium">
-                    <h3>Danh mục</h3>
-                    <ul>
-                        <li class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></li>
-                        <li class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></li>
-                        <li class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></li>
-                        <li class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></li>
-                        <li class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></li>
-                        <li class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></li>
-                    </ul>
+                <div class="sidebar-col box border-medium">
+                    <label>
+                        <h3>Danh mục</h3>
+                        <input type="checkbox"><span></span>
+                        <ul>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            
+                        </ul>
+                    </label>
                 </div>
-                <div class="sidebar-featured box border-medium">
-                    <h3>Danh mục</h3>
-                    <div class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></div>
-                    <div class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></div>
-                    <div class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></div>
-                    <div class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></div>
-                    <div class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></div>
-                    <div class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Đồ chơi - Mẹ & Bé</a></div>
+                <div class="sidebar-col box border-medium">
+                    <label>
+                        <h3>Nổi bật</h3>
+                        <input type="checkbox"><span></span>
+                        <ul>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Đồ chơi - Mẹ & Bé</a></li>
+                        </ul>
+                    </label>
                 </div>
-                <div class="sidebar-seller box border-medium">
-                    <div class="sidebar-items border-small"><a href="#"><img src="https://salt.tikicdn.com/cache/100x100/ts/upload/44/58/fc/804a2dfd610e9075ad5a8f0d13f2b21a.png.webp" alt="">Bán hàng cùng Tiki</a></div>
+                <div class="sidebar-col box border-medium">
+                    <label>
+                        <h3>Seller</h3>
+                        <input type="checkbox"><span></span>
+                        <ul>
+                            <li class="sidebar-items border-small"><a href="#"><img src="" alt="">Bán hàng cùng Tiki</a></li>
+                        </ul>
+                    </label>
                 </div>
             </div>
             <div class="content">
                 <div class="top-banner box border-medium">
-                    <div class="top-banner-left">
-                        <div><a href="#"><img src="https://daluscapital.com/wp-content/uploads/2016/04/dummy-post-square-1-1-768x768.jpg" alt=""></a></div>
-                    </div>
+                    <a class="top-banner-left" href="#"><img src="https://salt.tikicdn.com/cache/w750/ts/tikimsp/a2/62/a2/1c1229e6100b9be34bfdf8c32fd1abc9.jpeg.webp" alt=""></a>
                     <div class="top-banner-right row">
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
-                        <div><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyQ92l5WjR55Mog8XLVrGLfFdiz7TPr4vuz9w6ZB60dSaQGZv6_d1UMt67baUany0FYM&usqp=CAU" alt=""></a></div>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
+                        <a href="#"><img src="https://salt.tikicdn.com/cache/w280/ts/tikimsp/d8/58/e7/5375c1fe83fa41049356005c53ae4fec.jpg.webp" alt=""></a>
                     </div>
                 </div>
                 <div class="deal-today box border-medium">
@@ -100,14 +139,15 @@
                             <h3>Giá tốt hôm nay</h3>
                             <span>00</span><p>:</p><span>00</span><p>:</p><span>00</span>
                         </div>
-                        <div><a href="#">Xem thêm <i class="fa-solid fa-chevron-right"></i></a></div>
+                        <a href="#">Xem thêm</a>
                     </div>
                     <div class="deal-today-content">
-                        <div class="product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp" alt="product-img"><p class="price">3.897.000</p><sup>đ</sup><p class="status"><span></span> Vừa mở bán</p></a></div>
-                        <div class="product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp" alt="product-img"><p class="price">3.897.000</p><sup>đ</sup><p class="status"><span></span> Vừa mở bán</p></a></div>
-                        <div class="product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp" alt="product-img"><p class="price">3.897.000</p><sup>đ</sup><p class="status"><span></span> Vừa mở bán</p></a></div>
-                        <div class="product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp" alt="product-img"><p class="price">3.897.000</p><sup>đ</sup><p class="status"><span></span> Vừa mở bán</p></a></div>
-                        <div class="product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp" alt="product-img"><p class="price">3.897.000</p><sup>đ</sup><p class="status"><span></span> Vừa mở bán</p></a></div>
+                        <a class="product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/42/16/35/086695a87906c6dab22ff7e8147237a8.jpg.webp" alt="product-img"><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span></span> Vừa mở bán</p></a>
+                        <a class="product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/4c/22/ce/427f53a87214ccf18cbf6107593f86e9.jpg.webp" alt="product-img"><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span></span> Vừa mở bán</p></a>
+                        <a class="product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/7f/2e/b7/9f20be621cce5ff6d1aa20f12ceeb3a8.jpg.webp" alt="product-img"><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span></span> Vừa mở bán</p></a>
+                        <a class="product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/e3/e7/7f/869c46bafb3c07cd0eb1de7871dd336e.jpg.webp" alt="product-img"><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span></span> Vừa mở bán</p></a>
+                        <a class="product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/1b/a9/b6/4bf38305cdbf63b43ef3d846526d94de.jpg.webp" alt="product-img"><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span></span> Vừa mở bán</p></a>
+                        <a class="product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp" alt="product-img"><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span></span> Vừa mở bán</p></a>
                     </div>
                 </div>
                 <div class="hot-product box border-medium">
@@ -121,15 +161,12 @@
                         </ul>
                     </div>
                     <div class="hot-product-list">
-                        <div class="hot-product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><img src="https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png" alt=""><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><span class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span><img src="https://salt.tikicdn.com/ts/tka/a8/31/b6/802e2c99dcce64c67aa2648edb15dd25.png" alt=""></span> Giao hàng siêu tốc 2H</p></a></div>
-                        <div class="hot-product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><img src="https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png" alt=""><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><span class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span><img src="https://salt.tikicdn.com/ts/tka/a8/31/b6/802e2c99dcce64c67aa2648edb15dd25.png" alt=""></span> Giao hàng siêu tốc 2H</p></a></div>
-                        <div class="hot-product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><img src="https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png" alt=""><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><span class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span><img src="https://salt.tikicdn.com/ts/tka/a8/31/b6/802e2c99dcce64c67aa2648edb15dd25.png" alt=""></span> Giao hàng siêu tốc 2H</p></a></div>
-                        <div class="hot-product-items"><a href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><img src="https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png" alt=""><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><span class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><p class="price">3.897.000<sup>đ</sup></p><p class="status"><span><img src="https://salt.tikicdn.com/ts/tka/a8/31/b6/802e2c99dcce64c67aa2648edb15dd25.png" alt=""></span> Giao hàng siêu tốc 2H</p></a></div>
+                        <a class="hot-product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><p class="price">3.897.000<sup>đ</sup></p><p class="status">Giao hàng siêu tốc 2H</p></a>
+                        <a class="hot-product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><p class="price">3.897.000<sup>đ</sup></p><p class="status">Giao hàng siêu tốc 2H</p></a>
+                        <a class="hot-product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><p class="price">3.897.000<sup>đ</sup></p><p class="status">Giao hàng siêu tốc 2H</p></a>
+                        <a class="hot-product-items" href="#"><img src="https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/25/11/89/b6b8a8f3924cd99484ca0c16ad4b9b7d.png.webp" alt="hot-product-img"><p class="product-name">Điện thoại Xiaomi Redmi 9A (2GB/32GB)</p><p class="price">3.897.000<sup>đ</sup></p><p class="status">Giao hàng siêu tốc 2H</p></a>
                     </div> 
                 </div>
-                <div class="similar-product"></div>
-                <div class="book"></div>
-                <div class="today-suggestion"></div>
                 <footer>
                     <div class="info">
                         <div class="info1">
@@ -140,19 +177,11 @@
                                 <li><a href="#">Các câu hỏi thường gặp</a></li>
                                 <li><a href="#">Các câu hỏi thường gặp</a></li>
                                 <li><a href="#">Các câu hỏi thường gặp</a></li>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
                             </ul>
                         </div>
                         <div class="info2">
                             <h3>Về Tiki</h3>
                             <ul>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
-                                <li><a href="#">Các câu hỏi thường gặp</a></li>
                                 <li><a href="#">Các câu hỏi thường gặp</a></li>
                                 <li><a href="#">Các câu hỏi thường gặp</a></li>
                                 <li><a href="#">Các câu hỏi thường gặp</a></li>
@@ -177,8 +206,6 @@
                         <div class="info4">
                             <h3>Phương thức thanh toán</h3>
                             <ul  class="chung-nhan">
-                                <li><a href="#"><img src="https://images.dmca.com/Badges/dmca_protected_sml_120y.png?ID=388d758c-6722-4245-a2b0-1d2415e70127" alt=""></a></li>
-                                <li><a href="#"><img src="https://images.dmca.com/Badges/dmca_protected_sml_120y.png?ID=388d758c-6722-4245-a2b0-1d2415e70127" alt=""></a></li>
                                 <li><a href="#"><img src="https://images.dmca.com/Badges/dmca_protected_sml_120y.png?ID=388d758c-6722-4245-a2b0-1d2415e70127" alt=""></a></li>
                                 <li><a href="#"><img src="https://images.dmca.com/Badges/dmca_protected_sml_120y.png?ID=388d758c-6722-4245-a2b0-1d2415e70127" alt=""></a></li>
                                 <li><a href="#"><img src="https://images.dmca.com/Badges/dmca_protected_sml_120y.png?ID=388d758c-6722-4245-a2b0-1d2415e70127" alt=""></a></li>
@@ -250,13 +277,6 @@
                                 <h3>Đồ chơi - Mẹ & Bé</h3>
                                 <a href="#">Thời Trang Cho Mẹ Và Bé</a><span> / </span>
                                 <a href="#">Đồ chơi</a></a><span> / </span>
-                                <a href="#">Đồ dùng cho bé</a></a><span> / </span>
-                                <a href="#">Chăm sóc nhà cửa</a></a><span> / </span>
-                                <a href="#">Chăm sóc mẹ mang thai, sau sinh</a></a><span> / </span>
-                                <a href="#">Dinh dưỡng cho mẹ</a></a><span> / </span>
-                                <a href="#">Thực phẩm ăn dặm</a></a><span> / </span>
-                                <a href="#">Chuẩn bị mang thai</a></a><span> / </span>
-                                <a href="#">Thời Trang Cho Mẹ Và Bé</a>
                             </div>
                             <div class="ft-cate1">
                                 <h3>Đồ chơi - Mẹ & Bé</h3>
@@ -282,13 +302,6 @@
                                 <h3>Đồ chơi - Mẹ & Bé</h3>
                                 <a href="#">Thời Trang Cho Mẹ Và Bé</a><span> / </span>
                                 <a href="#">Đồ chơi</a></a><span> / </span>
-                                <a href="#">Đồ dùng cho bé</a></a><span> / </span>
-                                <a href="#">Chăm sóc nhà cửa</a></a><span> / </span>
-                                <a href="#">Chăm sóc mẹ mang thai, sau sinh</a></a><span> / </span>
-                                <a href="#">Dinh dưỡng cho mẹ</a></a><span> / </span>
-                                <a href="#">Thực phẩm ăn dặm</a></a><span> / </span>
-                                <a href="#">Chuẩn bị mang thai</a></a><span> / </span>
-                                <a href="#">Thời Trang Cho Mẹ Và Bé</a>
                             </div>
                             <div class="ft-cate1">
                                 <h3>Đồ chơi - Mẹ & Bé</h3>
