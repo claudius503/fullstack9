@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Kids Plaza Website Tailwind</title>
+</head>
+<body>
+    <header>
+        <div class="bg-primary-gray">
+            <div class="container flex justify-between items-center py-2 main-view z-0">
+                <div class="location flex grow justify-between items-center md:justify-start">
+                    <span class="tilte-loc min-w-max">Xem tồn kho, giá bán tại:</span>
+                    <span class="chose-loc font-bold text-primary flex items-center min-w-max md:pl-4">Miền Nam</span>
+                </div>
+                <div class="hidden md:flex">
+                    <div class="list-location px-5 flex items-center min-w-max"><a href="#">Hệ thống 155 cửa hàng</a></div>
+                    <div class="hotline pl-5 flex items-center min-w-max"><a href="#">Hotline: 1800.6608</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary-yellow max-h-full relative -z-0 pb-1">
+            <div class="container main-header main-view flex justify-between z-0">
+                <div class="top-bg-shape main-view absolute -z-0">
+                    <div class="shape-top bg-primary absolute"></div>
+                    <div class="shape-bottom bg-primary absolute"></div>
+                </div>
+                <div class="bottom-bg-shape main-view flex justify-between grow -z-0 text-primary-gray items-center gap-5 ml-20 py-6 bg-primary border-b-2 border-b-primary-gray">
+                    <a class="main-logo inline-block md:bg-none" href="#"><img class="hidden md:inline-block" src="https://www.kidsplaza.vn/static/version13/frontend/Smartosc/kidsplaza/vi_VN/images/logo.png" alt="logo"></a>
+                    <label class="search-box grow justify-start flex bg-primary-gray rounded-xl items-center">
+                        <button type="submit" class="flex items-center justify-center pl-4" title="Tìm kiếm"></button>
+                        <input type="text" name="search" id="header-search" placeholder="Tải App nhận ngay 50K" class="bg-primary-gray text-primary grow rounded-xl pl-4 inline-block h-16">
+                    </label>
+                    <ul class="">
+                        <li class="max-w-36 hidden lg:inline-block">Theo dõi đơn hàng</li>
+                        <li class="max-w-36 hidden lg:inline-block">Đăng nhập Đăng ký</li>
+                        <li><a class="cart mr-8 lg:mr-0" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="container main-view z-0 text-primary hidden md:flex mt-2 py-2 justify-between items-center text-2xl min-w-max">
+                <li class="sub-menu-1 uppercase flex items-center gap-2 justify-between font-bold text-3xl h-4 leading-4">Danh mục</li>
+                <li class="sub-menu-2 flex items-center min-w-max"><a href="#">Zalo cửa hàng</a></li>
+                <li class="sub-menu-3 flex items-center min-w-max"><a href="#">Freeship 7Km</a></li>
+                <li class="sub-menu-4 flex items-center min-w-max"><a href="#">Thưởng Kicoin</a></li>
+                <li class="hotline-2 flex items-center min-w-max"><a href="#">Hotline: 1800 6608</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
