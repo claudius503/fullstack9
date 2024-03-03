@@ -451,60 +451,6 @@ video {
   --primary-light-blue: rgb(0, 186, 242);
 }
 
-@font-face {
-  font-family: 'Kids';
-
-  src: url(./fonts/Kids-Light.woff2);
-
-  font-weight: light;
-}
-
-@font-face {
-  font-family: 'Kids';
-
-  src: url(./fonts/Kids-Regular.woff2);
-
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Kids';
-
-  src: url(./fonts/Kids-Bold.woff2);
-
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Kids-Icons';
-
-  src: url(./fonts/Kids-Icons.woff2);
-
-  font-weight: normal;
-}
-
-html {
-  font-family: 'Kids','Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
-  font-size: 62.5%;
-}
-
-li {
-  display: inline-block;
-}
-
-input {
-  outline: none;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -639,220 +585,8 @@ input {
   }
 }
 
-@media (min-width: 1280px) {
-  .main-view {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .main-view {
-    max-width: 1280px;
-  }
-}
-
-.location .chose-loc::after {
-  font-family: 'Kids-Icons';
-  content: '\e922';
-  font-size: 0.5rem;
-  margin: 0 2rem;
-  display: inline-block;
-}
-
-.main-header::after {
-  z-index: -1;
-  content: ' ';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: calc(7.5rem + 1px);
-  width: 50vw;
-  background-color: var(--primary-color);
-  border-bottom: solid 2px var(--primary-gray);
-}
-
-.shape-top {
-  width: 20rem;
-  top: -2px;
-  left: 1.5rem;
-  height: 2.5rem;
-  border: solid 2px var(--primary-gray);
-  border-right: 0;
-  border-color: var(--primary-gray) transparent var(--primary-gray) var(--primary-gray);
-  border-radius: 2.5rem / 2.5rem 0 0 2.5rem;
-  -webkit-border-radius: 2.5rem / 2.5rem 0 0 2.5rem;
-  -moz-border-radius: 2.5rem / 2.5rem 0 0 2.5rem;
-  -ms-border-radius: 2.5rem / 2.5rem 0 0 2.5rem;
-  -o-border-radius: 2.5rem / 2.5rem 0 0 2.5rem;
-}
-
-.shape-bottom {
-  min-width: 20rem;
-  top: calc(2.5rem - 4px);
-  left: 0;
-  height: calc(5rem + 5px);
-  border: solid 2px var(--primary-gray);
-  border-right: 0;
-  border-color: var(--primary-gray) transparent var(--primary-gray) var(--primary-gray);
-  border-radius: 5rem / 5rem 0 0 5rem;
-  -webkit-border-radius: 5rem / 5rem 0 0 5rem;
-  -moz-border-radius: 5rem / 5rem 0 0 5rem;
-  -ms-border-radius: 5rem / 5rem 0 0 5rem;
-  -o-border-radius: 5rem / 5rem 0 0 5rem;
-}
-
-.shape-bottom::before {
-  width: 20rem;
-  position: absolute;
-  content: ' ';
-  top: -0.5rem;
-  left: 2.5rem;
-  height: 1rem;
-  background-color: var(--primary-color);
-}
-
-.main-logo {
-  overflow: hidden;
-  min-width: 4rem;
-  min-height: calc(4rem + 4px);
-  background-image: url(https://www.kidsplaza.vn/static/version13/frontend/Smartosc/kidsplaza/vi_VN/images/logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.cart::before {
-  font-family: 'Kids-Icons';
-  content: '\e904';
-  font-size: 2.5rem;
-}
-
-.sub-menu-1::before {
-  content: '\e609';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-}
-
-.search-box > button::before {
-  content: '\e914';
-  font-family: 'Kids-Icons';
-  font-size: 3rem;
-  color: gray;
-}
-
-.search-box > button:hover::before {
-  color: rgb(61, 61, 61);
-}
-
-.hotline::before {
-  content: '\e900';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-  color: var(--primary-color);
-  padding-right: 1rem;
-}
-
-.hotline-2::before {
-  content: '\e600';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-  color: var(--primary-color);
-  margin-right: 1rem;
-  text-align: center;
-  min-width: 2.5rem;
-  padding: 3px;
-  transform: scale(110%);
-  background-color: var(--primary-gray);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-transform: scale(110%);
-  -moz-transform: scale(110%);
-  -ms-transform: scale(110%);
-  -o-transform: scale(110%);
-}
-
-.list-location::before {
-  content: '\e923';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-  color: var(--primary-color);
-  padding-right: 1rem;
-}
-
-.location::before {
-  content: '\e60a';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-  color: var(--primary-color);
-  padding-right: 1rem;
-}
-
-.sub-menu-2::before {
-  content: '\e603';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-  color: var(--primary-color);
-  margin-right: 1rem;
-  text-align: center;
-  min-width: 2.5rem;
-  padding: 3px;
-  transform: scale(110%);
-  background-color: var(--primary-gray);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-transform: scale(110%);
-  -moz-transform: scale(110%);
-  -ms-transform: scale(110%);
-  -o-transform: scale(110%);
-}
-
-.sub-menu-3::before {
-  content: '\e913';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-  color: var(--primary-color);
-  margin-right: 1rem;
-  text-align: center;
-  min-width: 2.5rem;
-  padding: 3px;
-  transform: scale(110%);
-  background-color: var(--primary-gray);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-transform: scale(110%);
-  -moz-transform: scale(110%);
-  -ms-transform: scale(110%);
-  -o-transform: scale(110%);
-}
-
-.sub-menu-4::before {
-  content: '\e926';
-  font-family: 'Kids-Icons';
-  font-size: larger;
-  color: var(--primary-color);
-  text-align: center;
-  min-width: 2.5rem;
-  margin-right: 1rem;
-  padding: 3px;
-  transform: scale(110%);
-  background-color: var(--primary-gray);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-transform: scale(110%);
-  -moz-transform: scale(110%);
-  -ms-transform: scale(110%);
-  -o-transform: scale(110%);
+img {
+  max-width: 250px;
 }
 
 .absolute {
@@ -869,6 +603,10 @@ input {
 
 .z-0 {
   z-index: 0;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .ml-20 {
@@ -1061,4 +799,12 @@ input {
   .lg\:max-w-36 {
     max-width: 9rem;
   }
+}
+
+.\[\&\>\*\:nth-child\(odd\)\>p\]\:order-2>*:nth-child(odd)>p {
+  order: 2;
+}
+
+.\[\&\>\*\:nth-child\(odd\)\]\:bg-primary>*:nth-child(odd) {
+  background-color: var(--primary-color);
 }

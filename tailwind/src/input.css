@@ -114,7 +114,7 @@
     .cart::before {
         font-family: 'Kids-Icons';
         content: '\e904';
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .sub-menu-1::before {
         content: '\e609';
