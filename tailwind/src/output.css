@@ -871,12 +871,16 @@ input {
   z-index: 0;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mt-2 {
@@ -930,6 +934,10 @@ input {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-2 {
@@ -991,6 +999,10 @@ input {
   padding-left: 1.25rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1019,6 +1031,10 @@ input {
 
 .text-primary-gray {
   color: var(--primary-gray);
+}
+
+.text-opacity-60 {
+  --tw-text-opacity: 0.6;
 }
 
 @media (min-width: 640px) {
@@ -1061,4 +1077,12 @@ input {
   .lg\:max-w-36 {
     max-width: 9rem;
   }
+}
+
+.\[\&\>\*\:nth-child\(odd\)\>p\]\:order-2>*:nth-child(odd)>p {
+  order: 2;
+}
+
+.\[\&\>\*\:nth-child\(odd\)\]\:bg-primary>*:nth-child(odd) {
+  background-color: var(--primary-color);
 }
