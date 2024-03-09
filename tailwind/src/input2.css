@@ -3,14 +3,63 @@
 @tailwind utilities;
 @layer base {
     :root {
-        --primary-color: rgb(0, 49, 137);
+        --primary-color: #c04ae2;
         --primary-yellow: rgb(255, 190, 49);
-        --primary-gray: rgb(244, 244, 244);
+        --primary-gray: #f2f1fb;
         --primary-light-blue: rgb(0, 186, 242);
+    }
+    html {
+    font-family: 'Overpass', sans-serif;
+    }
+    .container {
+        max-width: 1270px !important;
+        font-size: 1.25rem;
+        padding: 0 1.25rem;
     }
 }
 @layer components {
-    img {
-        max-width: 250px;
+
+    .main-menu a {
+        height: 48px;
+        line-height: 48px;
+    }
+    .main-menu button {
+        font-weight: 900;
+    }
+    .header-social > li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: max-content;
+    }
+    .hero-section {
+        background-image: url(img/hero-bg-img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero-section a {
+        font-size: 1.25rem;
+    }
+    .hero-content-left {
+        font-size: 1.9rem;
+    }
+    .hero-content-left h2 {
+        font-size: 5.6rem;
+        font-weight: 900;
+        line-height: normal;
+    }
+    .hero-content-left p {
+        line-height: normal;
+        color: #5e5858;
+    }
+    .hero-content-left button {
+        min-width: max-content;
+        padding: 1.5rem 3.75rem;
+    }
+    .main-content {
+        background-image: url(img/bg-services.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
