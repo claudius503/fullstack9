@@ -716,6 +716,10 @@ html {
   margin-top: 8rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -781,6 +785,10 @@ html {
   flex-wrap: wrap;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -813,27 +821,6 @@ html {
   gap: 1.25rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-0 {
-  gap: 0px;
-}
-
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -854,12 +841,17 @@ html {
   border-width: 2px;
 }
 
-.border-8 {
-  border-width: 8px;
+.border-4 {
+  border-width: 4px;
 }
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-l-yellow {
+  --tw-border-opacity: 1;
+  border-color: rgb(242 213 186 / var(--tw-border-opacity));
 }
 
 .border-mint {
@@ -876,11 +868,6 @@ html {
   border-color: var(--primary-color);
 }
 
-.border-l-yellow {
-  --tw-border-opacity: 1;
-  border-color: rgb(242 213 186 / var(--tw-border-opacity));
-}
-
 .border-b-primary-gray {
   border-bottom-color: var(--primary-gray);
 }
@@ -895,6 +882,11 @@ html {
 
 .bg-primary-yellow {
   background-color: var(--primary-yellow);
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-center {
@@ -919,6 +911,11 @@ html {
   padding-right: 2.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -927,6 +924,11 @@ html {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-2 {
@@ -944,6 +946,11 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -954,6 +961,10 @@ html {
 
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pr-48 {
+  padding-right: 12rem;
 }
 
 .pt-12 {
@@ -970,6 +981,10 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -1019,6 +1034,11 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 640px) {

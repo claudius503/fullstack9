@@ -23,6 +23,7 @@ module.exports = {
     },
     fontFamily: {
       kids: ['Kids','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif'],
+      roboto: ['Roboto','sans-serif'],
     },
     extend: {},
   },
