@@ -16,6 +16,14 @@
         font-size: 1.25rem;
         padding: 0 1.25rem;
     }
+    h3 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 54px;
+    }
+    input {
+        outline: none;
+    }
 }
 @layer components {
 
@@ -61,5 +69,57 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    .project-content {
+        background-image: url(img/project-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+    .team-content {
+        background-image: url(img/team-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .team-name {
+        margin-top: 40px;
+        font-weight: 800;
+        line-height: 48px;
+        font-size: 24px;
+    }
+    .job-title {
+        font-weight: 300;
+        line-height: 36px;
+        font-size: 18px;
+    }
+    .testimonial-info::before {
+        content: ' ';
+        display: inline-block;
+        width: 18px;
+        border-top: 2px solid #332e98;
+        margin-right: 25px;
+    }
+    .contact-us {
+        background-image: url(img/contact-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+    .home-blog {
+        background-image: url(img/blog-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    footer h4 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 900;
+        padding-bottom: 26px;
+    }
+    footer li {
+        font-size: 18px;
+        line-height: 36px;
     }
 }
