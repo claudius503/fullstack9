@@ -24,6 +24,10 @@
     input {
         outline: none;
     }
+    button:hover {
+        background-color: #332e98;
+        color: white;
+    }
 }
 @layer components {
 
