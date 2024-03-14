@@ -14,26 +14,88 @@
     .container {
         max-width: 1270px !important;
         font-size: 1.25rem;
-        padding: 0 1.25rem;
+        padding: 0 2rem;
     }
     h3 {
         font-size: 40px;
         font-weight: 800;
         line-height: 54px;
     }
-    input {
+    input, textarea {
         outline: none;
     }
     button:hover {
         background-color: #332e98;
         color: white;
     }
+    .home-blog h4:hover {
+        color: #332e98;
+    }
+    .main-menu div a:hover {
+        color: #c04ae2;
+        border-bottom: 1px solid #c04ae2;
+    }
+    .ft-link a:hover {
+        border-bottom: 1px solid #332e98;
+        color: #332e98;
+        transform: scale(120%);
+        -webkit-transform: scale(120%);
+        -moz-transform: scale(120%);
+        -ms-transform: scale(120%);
+        -o-transform: scale(120%);
+}
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #c04ae2;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #f2f1fb;
+        box-shadow: inset 0 0 5px #eeb0ff83;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #332e98;
+    }
+    img:hover {
+        transform: scale(105%)    ;
+        -webkit-transform: scale(105%)    ;
+        -moz-transform: scale(105%)    ;
+        -ms-transform: scale(105%)    ;
+        -o-transform: scale(105%)    ;
+}
 }
 @layer components {
-
+    .primary-button {
+        @apply bg-primary rounded-lg text-center px-12 py-6 uppercase font-bold text-white;
+    }
+    .secondary-button {
+        @apply text-lg px-12 font-extrabold py-5 border border-primary rounded-xl;
+    }
+    .more-link {
+        @apply border-b-2 border-b-primary font-bold p-2 rounded-t-lg;
+    }
     .main-menu a {
+        display: inline-block;
         height: 48px;
         line-height: 48px;
+        padding: 0 10px;
+    }
+    .main-menu li > a:hover > img {
+        scale: 150%;
+    }
+    .main-menu li > img {
+        min-height: 20px;
     }
     .main-menu button {
         font-weight: 900;
@@ -52,21 +114,13 @@
     .hero-section a {
         font-size: 1.25rem;
     }
-    .hero-content-left {
-        font-size: 1.9rem;
-    }
-    .hero-content-left h2 {
-        font-size: 5.6rem;
-        font-weight: 900;
-        line-height: normal;
-    }
     .hero-content-left p {
         line-height: normal;
         color: #5e5858;
     }
     .hero-content-left button {
         min-width: max-content;
-        padding: 1.5rem 3.75rem;
+        padding: 1.2rem 3.5rem;
     }
     .main-content {
         background-image: url(img/bg-services.jpg);
@@ -78,7 +132,7 @@
         background-image: url(img/project-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left;
+        background-position: center;
     }
     .team-content {
         background-image: url(img/team-bg.jpg);
@@ -108,7 +162,7 @@
         background-image: url(img/contact-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left;
+        background-position: center;
     }
     .home-blog {
         background-image: url(img/blog-bg.jpg);
@@ -125,5 +179,75 @@
     footer li {
         font-size: 18px;
         line-height: 36px;
+    }
+    textarea {
+        resize: none;
+    }
+    .session-title {
+        @apply font-extrabold md:text-[50px] md:leading-[60px] mx-auto lg:text-[60px] lg:leading-[72px] tracking-[-0.1rem];
+    }
+    .ft-info li {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 24px;
+        text-align: left;
+    }
+    @media only screen and (max-width:768px) {
+        p {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        h2 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+    }
+    @media only screen and (min-width:768px) {
+        p {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 90px;
+            line-height: 128px;
+        }
+    }
+    .sharpe-animation {
+        position: relative;
+    }
+    .triangle-down {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #54d6a1;
+        border-radius: 5px;
+        transform: rotate(60deg);
+        position:absolute;
+        top: 100px;
+        left: 600px;
+        animation: mymove 5s infinite;
+        -webkit-animation: mymove 5s infinite;
+    }
+    .circle-down {
+        width: 60px;
+        height: 60px;
+        border: double 7px transparent;
+        opacity: 0.7;
+        border-radius: 50px;
+        background-image: linear-gradient(white, white), radial-gradient(circle at top left, #54d6a1,#c04ae2);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        transform: rotate(60deg);
+        position:absolute;
+        top: -70px;
+        left: 500px;
+        animation: mymove 5s infinite;
+        -webkit-animation: mymove 5s infinite;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+    @keyframes mymove {
+        50% {transform: rotate(180deg);}
     }
 }

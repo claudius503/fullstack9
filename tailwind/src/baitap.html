@@ -12,11 +12,11 @@
 <body class="bg-primary-gray">
     <header>
         <div class="hero-section bg-center overflow-hidden">
-            <div class="main-menu container relative flex justify-center lg:justify-between items-center mx-auto pt-12">
+            <div class="main-menu container relative flex justify-center md:justify-between items-center mx-auto pt-12">
                 <a class="p-1 min-w-max" href="#"><img class="h-full" src="img/Rou-logo.png" alt="logo-rou"></a>
-                <label class="absolute right-1 top-12 lg:hidden" href="#"><img class="max-h-10" src="img/menu-icon.png" alt=""></label>
-                <div class="hidden lg:flex lg:justify-between lg:gap-5">
-                    <ul class="flex gap-5 font-bold">
+                <label class="absolute right-8 top-[60px] md:hidden" href="#"><img class="max-h-6" src="img/menu-icon.png" alt=""></label>
+                <div class="hidden md:flex md:justify-between md:gap-5">
+                    <ul class="flex font-bold">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
@@ -24,8 +24,8 @@
                         <li><a href="#">News</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <button class="border-2 rounded-lg px-10 border-primary min-w-max">Get A Quote</button>
-                    <ul class="header-social flex gap-4">
+                    <button class="border-2 rounded-lg px-10 border-primary min-w-max hidden lg:inline-block">Get A Quote</button>
+                    <ul class="header-social hidden lg:flex lg:min-w-max">
                         <li><a href="#"><img src="img/icon-fb.png" alt=""></a></li>
                         <li><a href="#"><img src="img/icon-twitter.png" alt=""></a></li>
                         <li><a href="#"><img src="img/icon-youtube.png" alt=""></a></li>
@@ -33,87 +33,94 @@
                     </ul>
                 </div>
             </div>
-            <div class="hero-content container flex justify-between mx-auto pt-2 lg:pt-40">
+            <div class="container flex justify-between mx-auto pt-2 lg:pt-40">
                 <div class="hero-content-left flex flex-col items-center text-center lg:text-left lg:relative lg:inline-block lg:w-3/5 lg:pr-7">
-                    <img class="p-12 lg:p-0 lg:absolute lg:left-full lg:top-10" src="img/hero-content-img.png" alt="">
-                    <h2>Work Smartly with Endless Possibility</h2>
-                    <p class="my-12">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerction </p>
-                    <button class="bg-primary rounded-lg text-center w-64 mb-64 font-bold text-white">Get Started</button>
+                    <img class="py-4 lg:absolute lg:left-full lg:top-10 " src="img/hero-content-img.png" alt="">
+                    <h2 class="uppercase md:text-[60px] md:leading-[70px] lg:text-[90px] lg:leading-[128px] tracking-[-0.1rem] font-extrabold">Work Smartly with Endless Possibility</h2>
+                    <p class="my-12 text-[30px] leading-[42px] relative">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerction <span class="triangle-down scale-150"></span> </p>
+                    <button class="primary-button mb-20 lg:mb-64">Get Started</button>
                 </div>
             </div>
         </div>
     </header>
+    
     <div class="main-content overflow-hidden">
         <div class="home-about container mx-auto text-center pt-24">
-            <p class="text-primary text-2xl uppercase mb-4 font-bold tracking-[0.2rem]">Build trust first</p>
-            <h2 class="font-extrabold max-w-screen-md text-6xl mx-auto tracking-[-0.1rem]">Control your business with a single tap</h2>
-            <div class="flex justify-center gap-4 lg:justify-between flex-wrap lg:flex-nowrap lg:gap-8 mt-32">
-                <div class="max-w-sm text-center py-20 px-4 border-4 border-pink rounded-3xl flex flex-col justify-center">
+            <p class="text-primary md:text-2xl uppercase mb-4 font-bold tracking-[0.2rem]">Build trust first</p>
+            <h2 class="font-extrabold max-w-screen-md md:text-[50px] md:leading-[60px] mx-auto lg:text-[60px] lg:leading-[72px] tracking-[-0.1rem]">Control your business with a single tap</h2>
+            <div class="flex justify-center gap-4 lg:justify-between flex-wrap lg:flex-nowrap lg:gap-8 lg:mt-16 py-16 [&>div:hover>img]:scale-110">
+                <div class="flex items-center justify-between gap-4 lg:max-w-sm text-center p-8 lg:py-20 px-4 border-4 border-pink rounded-3xl lg:flex lg:flex-col lg:justify-center">
                     <img class="max-w-20 object-center mx-auto mb-8" src="img/007-anchor.png" alt="">
-                    <p class="font-extrabold text-3xl mb-10">Complete business Control</p>
-                    <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
+                    <div>
+                        <p class="font-extrabold text-3xl mb-10">Complete business Control</p>
+                        <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
+                    </div>
                 </div>
-                <div class="max-w-sm text-center py-20 px-4 border-4 border-mint rounded-3xl flex flex-col justify-center">
+                <div class="flex items-center justify-between gap-4 lg:max-w-sm text-center p-8 lg:py-20 px-4 border-4 border-mint rounded-3xl lg:flex lg:flex-col lg:justify-center">
                     <img class="max-w-20 object-center mx-auto mb-8" src="img/009-archive.png" alt="">
-                    <p class="font-extrabold text-3xl mb-10">Critical analytics and report</p>
-                    <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
+                    <div>
+                        <p class="font-extrabold text-3xl mb-10">Critical analytics and report</p>
+                        <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
+                    </div>
                 </div>
-                <div class="max-w-sm text-center py-20 px-4 border-4 border-l-yellow rounded-3xl flex flex-col justify-center">
+                <div class="flex items-center justify-between gap-4 lg:max-w-sm text-center p-8 lg:py-20 px-4 border-4 border-l-yellow rounded-3xl lg:flex lg:flex-col lg:justify-center">
                     <img class="max-w-20 object-center mx-auto mb-8" src="img/199-user.png" alt="">
-                    <p class="font-extrabold text-3xl mb-10">User satisfaction guarranted</p>
-                    <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
+                    <div>
+                        <p class="font-extrabold text-3xl mb-10">User satisfaction guarranted</p>
+                        <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
+                    </div>
                 </div>
             </div>
             <div class="container flex justify-between mx-auto pt-2 lg:pt-40">
                 <div class="team-content-left flex flex-col items-center text-center lg:text-left lg:relative lg:inline-block lg:w-3/5 lg:pr-7">
                     <img class="p-12 lg:p-0 lg:absolute lg:left-full lg:top-10" src="img/creative-team.png" alt="">
-                    <h2 class="font-extrabold text-6xl">Most innovative creative team</h2>
-                    <p class="my-12 text-2xl pr-48">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerction</p>
-                    <p class="my-12 pr-48">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occae cat cupidatat non proident, sunt in culpa qui officia deser unt mollit anim id est laborum. </p>
-                    <button class="bg-primary rounded-lg text-center px-12 py-7 uppercase mb-64 font-bold text-white">Know more</button>
+                    <h2 class="font-extrabold md:text-[50px] md:leading-[60px] lg:text-[60px] lg:leading-[72px] tracking-[-0.1rem] lg:pr-24 xl:pr-48">Most innovative creative team</h2>
+                    <p class="my-4 lg:my-8 text-2xl lg:pr-24 xl:pr-48">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerction</p>
+                    <p class="my-8 lg:my-8 lg:pr-24 xl:pr-48">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occae cat cupidatat non proident, sunt in culpa qui officia deser unt mollit anim id est laborum. </p>
+                    <button class="primary-button mb-64">Know more</button>
                 </div>
             </div>
-            <div class="flex flex-col items-end mb-28">
+            <div class="flex flex-col items-center lg:items-end mb-28">
                 <p class="text-primary text-2xl uppercase mb-4 font-bold text-right tracking-[0.2rem]">What we do</p>
-                <h2 class="font-extrabold max-w-screen-md text-6xl text-right tracking-[-0.1rem]">Service to solve all kinds of business problem</h2>
+                <h2 class="font-extrabold md:text-[50px] md:leading-[60px] lg:text-[60px] lg:leading-[72px] tracking-[-0.1rem] max-w-screen-md text-center lg:text-right">Service to solve all kinds of business problem</h2>
             </div>
-            <div class="flex justify-between gap-8 mb-48">
-                <div>
-                    <div class="max-w-sm text-center py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
+            <div class="lg:flex lg:justify-between md:mb-24 lg:mb-48 [&>div>div:hover]:scale-105 [&>div>div>a:hover]:translate-x-3">
+                <div class="flex-col lg:inline-block">
+                    <div class="lg:max-w-[360px] text-center py-8 my-8 lg:py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
                         <img class="max-w-20 object-center mx-auto mb-8" src="img/squares.png" alt="">
                         <p class="font-extrabold text-3xl mb-10">Business Automation</p>
                         <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
                         <a href="#"><img class="max-w-20 object-center mx-auto mt-8" src="img/iconfinder_down.png" alt=""></a>
                     </div>
-                    <div class="max-w-sm text-center mt-8 py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
+                    <div class="lg:max-w-[360px] text-center lg:mt-8 py-8 my-8 lg:py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
                         <img class="max-w-20 object-center mx-auto mb-8" src="img/headphones.png" alt="">
                         <p class="font-extrabold text-3xl mb-10">Realtime Support</p>
                         <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
                         <a href="#"><img class="max-w-20 object-center mx-auto mt-8" src="img/iconfinder_down.png" alt=""></a>
                     </div>
                 </div>
-                <div class="mt-24">
-                    <div class="max-w-sm text-center py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
+                <div class="lg:pt-24 flex-col lg:inline-block">
+                    <div class="lg:max-w-[360px] text-center py-8 my-8 lg:py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
                         <img class="max-w-20 object-center mx-auto mb-8" src="img/shopping-cart.png" alt="">
                         <p class="font-extrabold text-3xl mb-10">Ecommerce Support</p>
                         <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
                         <a href="#"><img class="max-w-20 object-center mx-auto mt-8" src="img/iconfinder_down.png" alt=""></a>
                     </div>
-                    <div class="max-w-sm text-center mt-8 py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
+                    <div class="lg:max-w-[360px] text-center lg:mt-8 py-8 my-8 lg:py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
                         <img class="max-w-20 object-center mx-auto mb-8" src="img/placeholder.png" alt="">
                         <p class="font-extrabold text-3xl mb-10">Location Marking</p>
                         <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
                         <a href="#"><img class="max-w-20 object-center mx-auto mt-8" src="img/iconfinder_down.png" alt=""></a>
                     </div>
                 </div>
-                <div class="mt-48">
-                    <div class="max-w-sm text-center py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
+                <div class="lg:pt-48 flex-col lg:inline-block">
+                    <div class="lg:max-w-[360px] text-center py-8 my-8 lg:py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
                         <img class="max-w-20 object-center mx-auto mb-8" src="img/video-camera.png" alt="">
                         <p class="font-extrabold text-3xl mb-10">Video Production </p>
                         <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
                         <a href="#"><img class="max-w-20 object-center mx-auto mt-8" src="img/iconfinder_down.png" alt=""></a>
                     </div>
-                    <div class="max-w-sm text-center mt-8 py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
+                    <div class="lg:max-w-[360px] text-center lg:mt-8 py-8 my-8 lg:py-20 px-6 drop-shadow-2xl bg-white rounded-3xl flex flex-col justify-center">
                         <img class="max-w-20 object-center mx-auto mb-8" src="img/upload.png" alt="">
                         <p class="font-extrabold text-3xl mb-10">File Upload Protocol</p>
                         <p class="text-xl">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation </p>
@@ -123,74 +130,77 @@
             </div>
         </div>
     </div>
-    <div class="project-content">
-        <div class="container mx-auto text-center pt-24 [&>div:nth-child(even)>img]:order-2">
+    <div class="project-content overflow-hidden">
+        <div class="container mx-auto text-center pt-24 lg:[&>div:nth-child(even)>img]:order-2">
             <p class="text-primary text-2xl uppercase mb-4 font-bold tracking-[0.2rem]">Our Projects</p>
-            <h2 class="font-extrabold max-w-screen-md text-6xl mx-auto tracking-[-0.1rem]">Check the real innovation of problem solving</h2>
-            <div  class="flex items-center mt-28 gap-32">
+            <h2 class="font-extrabold max-w-screen-md md:text-[50px] md:leading-[60px] mx-auto lg:text-[60px] lg:leading-[72px] tracking-[-0.1rem] relative">Check the real innovation of problem solving <span class="circle-down scale-150 lg:ml-[50px]"></span></h2>
+            <div class="flex flex-col items-center lg:flex-row lg:items-center mt-28 gap-14 lg:gap-32">
                 <img src="img/photo-dev.png" alt="">
                 <div class="text-left">
                     <p class="text-2xl font-extrabold text-t-pink">Development</p>
                     <h3 class="mb-[26px]">Jodi kokhono vul hoye jay tumi oporadh nio na</h3>
                     <p class="leading-[32px]">Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deser unt mollit a do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <button class="text-lg px-12 font-extrabold mt-12 py-5 border border-primary rounded-xl">View Project</button>
+                    <button class="secondary-button mt-12">View Project</button>
                 </div>
             </div>
-            <div  class="flex items-center mt-28 gap-32">
+            <div class="flex flex-col items-center lg:flex-row lg:items-center mt-28 gap-14 lg:gap-32">
                 <img src="img/photo-ra.png" alt="">
                 <div class="text-left">
                     <p class="text-2xl font-extrabold text-t-mint">Research & Analytics</p>
                     <h3 class="mb-[26px]">Ei biristi veja rate tuminei bole somoy amar katena</h3>
                     <p class="leading-[32px]">Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deser unt mollit a do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <button class="text-lg px-12 font-extrabold mt-12 py-5 border border-primary rounded-xl">View Project</button>
+                    <button class="secondary-button mt-12">View Project</button>
                 </div>
             </div>
-            <div  class="flex items-center mt-28 gap-32">
+            <div class="flex flex-col items-center lg:flex-row lg:items-center mt-28 gap-14 lg:gap-32">
                 <img src="img/photo-ux.png" alt="">
                 <div class="text-left">
                     <p class="text-2xl font-extrabold text-t-orange">UI/UX Engineering</p>
                     <h3 class="mb-[26px]">Ami jare chaire se thake mori ontore </h3>
                     <p class="leading-[32px]">Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia deser unt mollit a do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <button class="text-lg px-12 font-extrabold mt-12 py-5 border border-primary rounded-xl">View Project</button>
+                    <button class="secondary-button mt-12">View Project</button>
                 </div>
             </div>
-            <button class="mt-[75px] mb-[192px] border-b-2 border-b-primary font-bold" href="#">Go to Portfolio</button>
+            <button class="mt-[75px] mb-[192px] more-link" href="#">Go to Portfolio</button>
         </div>
     </div>
     <div class="team-content">
         <div class="container mx-auto text-center pt-[220px]">
             <p class="text-primary text-2xl uppercase leading-[90px] font-bold tracking-[0.2rem]">Meet our team</p>
-            <h2 class="font-extrabold max-w-screen-md text-6xl leading-[72px] tracking-[-0.1rem] mx-auto">Awesome people with great business skills</h2>
-            <div class="flex justify-between mt-[90px] gap-4 [&>div:nth-child(even)]:pt-[70px]">
-                <div class="text-left max-w-[20%]">
+            <h2 class="max-w-screen-md session-title">Awesome people with great business skills</h2>
+            <div class="md:flex md:justify-between mt-[90px] gap-4 [&>div:nth-child(even)]:pt-[70px] [&>div:hover>img]:scale-105">
+                <div class="flex flex-col items-center lg:items-start justify-start md:max-w-[40%] lg:max-w-[20%]">
                     <img src="img/bruce.png" alt="">
                     <p class="team-name">Bruce Wayne</p>
                     <p class="job-title">Founder & CEO</p>
                 </div>
-                <div class="text-left max-w-[20%]">
+                <div class="flex flex-col items-center lg:items-start justify-start md:max-w-[40%] lg:max-w-[20%]">
                     <img src="img/clark.png" alt="">
                     <p class="team-name">Bruce Wayne</p>
                     <p class="job-title">Founder & CEO</p>
                 </div>
-                <div class="text-left max-w-[20%]">
+                <div class="flex flex-col items-center lg:items-start justify-start md:max-w-[40%] lg:max-w-[20%]">
                     <img src="img/jessica.png" alt="">
                     <p class="team-name">Bruce Wayne</p>
                     <p class="job-title">Founder & CEO</p>
                 </div>
-                <div class="text-left max-w-[20%]">
+                <div class="flex flex-col items-center lg:items-start justify-start md:max-w-[40%] lg:max-w-[20%]">
                     <img src="img/justin.png" alt="">
                     <p class="team-name">Bruce Wayne</p>
                     <p class="job-title">Founder & CEO</p>
                 </div>
             </div>
         </div>
-        <div class="container mx-auto flex items-center py-[180px]">
-            <div class="pr-[50px]">
-                <p class="text-primary text-2xl leading-[72px] uppercase mb-4 font-bold tracking-[0.2rem]">Testimonial</p>
-                <h2 class="font-extrabold max-w-screen-md text-6xl leading-[90px] tracking-[0.1rem]">They are awesome!</h2>
-                <p class="leading-[36px] py-[64px] text-2xl">Kollit a do eiusmod tempor incididunt ut labore et do irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p class="testimonial-info text-2xl font-bold leading-[48px] flex items-center">Kabir Manja<span class="pl-[24px] text-lg text-[#adb0ba]">Music Producer</span></p>
-                <div class="flex max-w-[76px] gap-[12px] my-[54px]">
+        <div class="container mx-auto flex flex-col items-center lg:flex-row py-[180px]">
+            <div class="testimonial-content flex flex-col items-center lg:inline-block lg:pr-[50px]">
+                <div class="relative">
+                    <p class="text-primary text-2xl leading-[72px] uppercase mb-4 font-bold tracking-[0.2rem]">Testimonial</p>
+                    <h2 class="font-extrabold max-w-screen-md md:text-[60px] md:leading-[70px] lg:text-6xl lg:leading-[90px] tracking-[0.1rem]">They are awesome!</h2>
+                    <img class="absolute top-[24px] -left-[120px]" src="img/quote-icon.png" alt="">
+                    <p class="leading-[36px] py-[64px] text-2xl">Kollit a do eiusmod tempor incididunt ut labore et do irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p class="testimonial-info text-2xl font-bold leading-[48px] flex items-center">Kabir Manja<span class="pl-[24px] text-lg text-[#adb0ba]">Music Producer</span></p>
+                </div>
+                <div class="flex max-w-[76px] gap-[12px] my-[24px] lg:my-[54px] cursor-pointer">
                     <span class="w-[30px] h-[12px] bg-primary rounded-xl"></span>
                     <span class="w-[12px] h-[12px] bg-primary rounded-xl"></span>
                     <span class="w-[12px] h-[12px] bg-primary rounded-xl"></span>
@@ -199,36 +209,36 @@
             <img src="img/testimonial.png" alt="">
         </div>
     </div>
-    <div class="contact-us">
-        <div class="container mx-auto text-center pt-[220px]">
+    <div class="contact-us overflow-hidden">
+        <div class="container mx-auto text-center pt-[90px] lg:pt-[220px]">
             <p class="text-primary text-2xl uppercase leading-[90px] font-bold tracking-[0.2rem]">Contact Us</p>
-            <h2 class="font-extrabold max-w-screen-md text-6xl leading-[72px] tracking-[-0.1rem] mx-auto">Stay connected with us for any reason</h2>
+            <h2 class="max-w-screen-md session-title">Stay connected with us for any reason</h2>
         </div>
-        <div class="container mx-auto flex justify-between items-center py-[180px]">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center lg:py-[180px]">
             <div>
-                <h2 class="font-extrabold text-[42px] leading-[54px] tracking-[-0.1rem] mx-auto mb-[55px]">Write us a message</h2>
-                <form action="" class="pr-[115px] flex flex-col justify-start gap-[30px] [&>input]:h-[72px] [&>input]:w-[470px] [&>input]:drop-shadow-2xl [&>input]:rounded-lg [&>input]:p-[30px] [&>input]:bg-white">
+                <h2 class="font-extrabold text-[42px] leading-[54px] tracking-[-0.1rem] mx-auto my-[55px]">Write us a message</h2>
+                <form action="" class="text-center lg:text-left lg:pr-[65px] xl:pr-[115px] [&>*]:my-[16px] [&>input]:w-full [&>input]:h-[72px] [&>input]:drop-shadow-2xl [&>input]:rounded-lg [&>input]:p-[30px] [&>input]:bg-white [&>textarea]:w-full [&>textarea]:rounded-lg [&>textarea]:p-[30px] [&>textarea]:bg-white [&>textarea]:drop-shadow-2xl">
                     <input type="tel" placeholder="Your name" name="fphone" id="fphone">
                     <input type="email" placeholder="Your email" name="fphone" id="fphone">
                     <input type="text" placeholder="Subject" name="fphone" id="fphone">
-                    <input type="text" placeholder="Start writing message here" name="fphone" id="fphone">
-                    <button class="bg-primary rounded-lg text-center px-12 py-7 uppercase font-bold text-white max-w-max" type="submit">Get Started</button>
+                    <textarea type="text" placeholder="Start writing message here" rows="5" name="fphone" id="fphone"></textarea>
+                    <button class="primary-button max-w-max" type="submit">Get Started</button>
                 </form>
             </div>
-            <div class="pl-[115px] max-w-[50%]">
+            <div class="py-[32px] lg:pl-[115px] lg:max-w-[50%]">
                 <p class="text-2xl leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. </p>
                 <div class="flex items-center gap-6 py-6">
                     <img src="img/phone-icon.png" alt="">
                     <div>
                         <p class="text-[21px] leading-6 font-extrabold">Phone</p>
-                        <p class="text-[18px] leading-[30px]">0123-4567-8910</p>
+                        <a href="tel:012345678910" class="text-[18px] leading-[30px]">0123-4567-8910</a>
                     </div>
                 </div>
                 <div class="flex items-center gap-6 py-6">
                     <img src="img/email-icon.png" alt="">
                     <div>
                         <p class="text-[21px] leading-6 font-extrabold">Email</p>
-                        <p class="text-[18px] leading-[30px]">hello@rainydesign.com</p>
+                        <a href="mailto:hello@rainydesign.com" class="text-[18px] leading-[30px]">hello@rainydesign.com</a>
                     </div>
                 </div>
                 <div class="flex items-center gap-6 py-6">
@@ -242,103 +252,125 @@
             </div>
         </div>
     </div>
-    <div class="home-blog">
-        <div class=" container mx-auto flex justify-between items-end pt-[192px]">
+    <div class="home-blog overflow-hidden">
+        <div class=" container mx-auto flex justify-between items-end pt-[192px] pb-[55px]">
             <div>
                 <p class="text-primary text-2xl leading-[72px] uppercase mb-4 font-bold tracking-[0.2rem]">From Our Blog</p>
-                <h2 class="font-extrabold max-w-screen-md text-6xl leading-[90px] tracking-[0.1rem]">Get lastest update</h2>
+                <h2 class="session-title max-w-screen-md">Get lastest update</h2>
             </div>
-            <button class="border-b-2 border-b-primary font-bold" href="#">Go to Blog</button>
+            <button class="more-link" href="#">Go to Blog</button>
         </div>
-        <div class="mt-[115px] container mx-auto flex justify-between pb-[192px]">
-            <div class="bg-white max-w-[370px] pl-[39px] pr-[49px] py-[48px] rounded-[18px] drop-shadow-xl">
-                <p class="text-lg text-t-pink leading-[30px] tracking-[-0.1rem] font-extrabold">App Development</p>
-                <h4 class="text-2xl leading-[36px] tracking-[-0.1rem] font-extrabold pb-[36px]">When the musics over turn off the light </h4>
+        <div class="pt-[55px] container mx-auto lg:flex lg:justify-between pb-[192px] [&>div]:my-[32px] [&>div:hover]:scale-105">
+            <div class="bg-white lg:max-w-[370px] pl-[39px] pr-[49px] py-[48px] rounded-[18px] drop-shadow-xl">
+                <a href="#">
+                    <p class="text-lg text-t-pink leading-[30px] tracking-[-0.1rem] font-extrabold">App Development</p>
+                </a>
+                <a href="#">
+                    <h4 class="text-2xl leading-[36px] tracking-[-0.1rem] font-extrabold pb-[36px]">When the musics over turn off the light </h4>
+                </a>
                 <p>Excep teur sint occae cat cupid atat non proident, sunt in culpa qui officia deser unt mollit ..</p>
                 <div class="pt-[38px] flex items-center justify-between">
-                    <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center gap-3">
                         <img src="img/Eity.png" alt="">
                         <p>Sharmin Eity</p>
-                    </div>
+                    </a>
                     <div class="flex items-center gap-3">
-                        <img src="img/like.png" alt="">
+                        <a href="#">
+                            <img src="img/like.png" alt="">
+                        </a>
                         <p>22</p>
                     </div>
                 </div>
             </div>
-            <div class="max-w-[370px] pl-[39px] pr-[49px] py-[48px] rounded-[18px] border border-[#b3bed1]">
-                <p class="text-lg text-t-mint leading-[30px] tracking-[-0.1rem] font-extrabold">Design</p>
-                <h4 class="text-2xl leading-[36px] tracking-[-0.1rem] font-extrabold pb-[36px]">When the musics over turn off the light </h4>
+            <div class="lg:max-w-[370px] pl-[39px] pr-[49px] py-[48px] rounded-[18px] border border-[#b3bed1]">
+                <a href="#">
+                    <p class="text-lg text-t-mint leading-[30px] tracking-[-0.1rem] font-extrabold">Design</p>
+                </a>
+                <a href="#">
+                    <h4 class="text-2xl leading-[36px] tracking-[-0.1rem] font-extrabold pb-[36px]">When the musics over turn off the light </h4>
+                </a>
                 <p>Excep teur sint occae cat cupid atat non proident, sunt in culpa qui officia deser unt mollit ..</p>
                 <div class="pt-[38px] flex items-center justify-between">
-                    <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center gap-3">
                         <img src="img/Ema.png" alt="">
                         <p>Sanjida Ema</p>
-                    </div>
+                    </a>
                     <div class="flex items-center gap-3">
-                        <img src="img/like.png" alt="">
+                        <a href="#">
+                            <img src="img/like.png" alt="">
+                        </a>
                         <p>22</p>
                     </div>
                 </div>
             </div>
-            <div class="max-w-[370px] pl-[39px] pr-[49px] py-[48px] rounded-[18px] border border-[#b3bed1]">
-                <p class="text-lg text-t-orange leading-[30px] tracking-[-0.1rem] font-extrabold">Research
-                </p>
-                <h4 class="text-2xl leading-[36px] tracking-[-0.1rem] font-extrabold pb-[36px]">When the musics over turn off the light </h4>
+            <div class="lg:max-w-[370px] pl-[39px] pr-[49px] py-[48px] rounded-[18px] border border-[#b3bed1]">
+                <a href="#">
+                    <p class="text-lg text-t-orange leading-[30px] tracking-[-0.1rem] font-extrabold">Research
+                    </p>
+                </a>
+                <a href="#">
+                    <h4 class="text-2xl leading-[36px] tracking-[-0.1rem] font-extrabold pb-[36px]">When the musics over turn off the light </h4>
+                </a>
                 <p>Excep teur sint occae cat cupid atat non proident, sunt in culpa qui officia deser unt mollit ..</p>
                 <div class="pt-[38px] flex items-center justify-between">
-                    <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center gap-3">
                         <img src="img/Ema.png" alt="">
                         <p>Nayna Eva</p>
-                    </div>
+                    </a>
                     <div class="flex items-center gap-3">
-                        <img src="img/like.png" alt="">
+                        <a href="#">
+                            <img src="img/like.png" alt="">
+                        </a>
                         <p>22</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-white">
-        <div class="container mx-auto flex justify-between pt-[168px]">
-            <div class="max-w-[370px]">
-                <img src="img/Rou-logo.png" alt="">
+    <footer class="bg-white overflow-hidden">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between pt-[168px] gap-[10px]">
+            <div class="max-w-full lg:max-w-[370px] text-center">
+                <a href="#">
+                    <img class="mx-auto" src="img/Rou-logo.png" alt="">
+                </a>
                 <p class="py-[32px]">Fectetur adipisicing elit, sed do eius mod tempor Lorem ipsum dolor sit amet, con sectetur adipisicing elitt ut labore</p>
                 <label class="flex justify-between items-center p-[20px] bg-ft-blue rounded-[7px]">
                     <input class="bg-ft-blue" type="email" placeholder="Submit Email" id="dang-ky-email">
                     <img src="img/form-email.png" alt="">
                 </label>
             </div>
-            <div class="max-w-[170px]">
-                <h4>About</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Success</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
+            <div class="ft-link grow flex justify-evenly">
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Success</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Maintanance</a></li>
+                        <li><a href="#">Consultancy</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="max-w-[170px]">
-                <h4>Service</h4>
-                <ul>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">Maintanance</a></li>
-                    <li><a href="#">Consultancy</a></li>
-                    <li><a href="#">Design</a></li>
-                </ul>
-            </div>
-            <div class="max-w-[270px]">
+            <div class="lg:max-w-[270px] mx-auto text-center">
                 <h4>Get in Touch</h4>
-                <ul>
-                    <li>22/1 Bardeshi, Amin Bazar
-                        Dhaka 1348</li>
-                    <li>xuwelkhan@gmail.com</li>
-                    <li>+88 01679 252595</li>
+                <ul class="ft-info">
+                    <li><img src="img/ft-add-icon.png" alt=""><p>22/1 Bardeshi, Amin Bazar
+                        Dhaka 1348</p></li>
+                    <li><img src="img/ft-email-icon.png" alt="">xuwelkhan@gmail.com</li>
+                    <li><img src="img/ft-phone-icon.png" alt="">+88 01679 252595</li>
                 </ul>
             </div>
         </div>
-        <div class="container mx-auto flex justify-between items-center pt-[168px] pb-[60px]">
+        <div class="container mx-auto flex flex-col lg:flex-row gap-[24px] justify-between items-center pt-[32px] lg:pt-[168px] pb-[60px]">
             <div class="flex items-center">
                 <p class="pr-[60px]">Follow Us</p>
                 <ul class="header-social flex gap-4">
